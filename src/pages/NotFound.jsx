@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 export default function NotFound({ title = 'No encontramos esta página' }) {
+  usePageMeta(title)
   return (
     <section className="container-page py-20 text-center">
       <h1 className="text-4xl uppercase text-titanio">{title}</h1>
