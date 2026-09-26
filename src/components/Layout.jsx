@@ -1,10 +1,16 @@
-import { Outlet } from 'react-router-dom'
+import { Outlet, useMatch } from 'react-router-dom'
 import Header from './Header'
 import Footer from './Footer'
 import WhatsAppFloat from './WhatsAppFloat'
 import ScrollToTop from './ScrollToTop'
+import { useContactBranch } from '../hooks/useContactBranch'
+import { buildGeneralUrl } from '../services/whatsapp'
 
 export default function Layout() {
+  const branch = useContactBranch()
+  // En la ficha de producto hay barra CTA fija abajo en móvil: el botón flotante se sube.
+  const onProduct = useMatch('/producto/:slug')
+
   return (
     <div className="flex min-h-screen flex-col">
       <ScrollToTop />
@@ -19,7 +25,7 @@ export default function Layout() {
         <Outlet />
       </main>
       <Footer />
-      <WhatsAppFloat />
+      <WhatsAppFloat href={buildGeneralUrl(branch)} raised={Boolean(onProduct)} />
     </div>
   )
 }

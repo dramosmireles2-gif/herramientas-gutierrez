@@ -1,9 +1,11 @@
 import { Route, Routes } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './pages/Home'
+import Catalog from './pages/Catalog'
+import Product from './pages/Product'
 import NotFound from './pages/NotFound'
 
-// Rutas pendientes muestran un aviso hasta que se construyan en los pasos 3–6.
+// Rutas pendientes muestran un aviso hasta que se construyan en los pasos 4–6.
 const Pending = ({ title }) => <NotFound title={`${title}: próximamente`} />
 
 export default function App() {
@@ -11,8 +13,8 @@ export default function App() {
     <Routes>
       <Route element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="catalogo" element={<Pending title="Catálogo" />} />
-        <Route path="producto/:slug" element={<Pending title="Producto" />} />
+        <Route path="catalogo" element={<Catalog />} />
+        <Route path="producto/:slug" element={<Product />} />
         <Route path="carrito" element={<Pending title="Carrito" />} />
         <Route path="checkout" element={<Pending title="Checkout" />} />
         <Route path="pedido/:folio" element={<Pending title="Pedido" />} />

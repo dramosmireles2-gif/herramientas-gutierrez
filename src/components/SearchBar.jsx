@@ -1,10 +1,15 @@
-import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { useNavigate, useSearchParams } from 'react-router-dom'
 import { SearchIcon } from './icons'
 
 export default function SearchBar({ id = 'buscar', className = '' }) {
-  const [q, setQ] = useState('')
+  const [params] = useSearchParams()
+  const urlQuery = params.get('q') ?? ''
+  const [q, setQ] = useState(urlQuery)
   const navigate = useNavigate()
+
+  // Mantiene el texto sincronizado con la búsqueda activa del catálogo.
+  useEffect(() => setQ(urlQuery), [urlQuery])
 
   const onSubmit = (e) => {
     e.preventDefault()

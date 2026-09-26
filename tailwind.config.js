@@ -3,23 +3,25 @@
 export default {
   content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
+    // En hex (no var()) para que funcionen los modificadores de opacidad como bg-titanio/60.
+    // Mismos valores que las variables --c-* de src/index.css.
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      titanio: 'var(--c-titanio)',
+      titanio: '#2B3440',
       hielo: {
-        DEFAULT: 'var(--c-hielo)',
-        hover: 'var(--c-hielo-hover)',
-        texto: 'var(--c-hielo-texto)',
+        DEFAULT: '#0EA5E9',
+        hover: '#0284C7',
+        texto: '#0369A1',
       },
-      'cta-ink': 'var(--c-cta-ink)',
-      texto: 'var(--c-texto)',
-      gris: 'var(--c-gris)',
-      fondo: 'var(--c-fondo)',
-      blanco: 'var(--c-blanco)',
-      whatsapp: 'var(--c-whatsapp)',
-      ok: 'var(--c-ok)',
-      agotado: 'var(--c-agotado)',
+      'cta-ink': '#0B2233',
+      texto: '#161C24',
+      gris: '#687483',
+      fondo: '#F1F4F7',
+      blanco: '#FFFFFF',
+      whatsapp: '#25D366',
+      ok: '#1E7A45',
+      agotado: '#C62828',
     },
     fontFamily: {
       display: ['Archivo', 'system-ui', 'sans-serif'],
