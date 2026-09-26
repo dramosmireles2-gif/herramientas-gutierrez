@@ -1,0 +1,87 @@
+[
+  {
+    "id": "atlas",
+    "slug": "atlas",
+    "name": "Atlas"
+  },
+  {
+    "id": "bauer",
+    "slug": "bauer",
+    "name": "Bauer"
+  },
+  {
+    "id": "bauker",
+    "slug": "bauker",
+    "name": "Bauker"
+  },
+  {
+    "id": "central-machinery",
+    "slug": "central-machinery",
+    "name": "Central Machinery"
+  },
+  {
+    "id": "champion",
+    "slug": "champion",
+    "name": "Champion"
+  },
+  {
+    "id": "daytona",
+    "slug": "daytona",
+    "name": "Daytona"
+  },
+  {
+    "id": "dewalt",
+    "slug": "dewalt",
+    "name": "DeWalt"
+  },
+  {
+    "id": "echo",
+    "slug": "echo",
+    "name": "Echo"
+  },
+  {
+    "id": "enerwell",
+    "slug": "enerwell",
+    "name": "Enerwell"
+  },
+  {
+    "id": "hercules",
+    "slug": "hercules",
+    "name": "Hercules"
+  },
+  {
+    "id": "husky",
+    "slug": "husky",
+    "name": "Husky"
+  },
+  {
+    "id": "mcgraw",
+    "slug": "mcgraw",
+    "name": "McGraw"
+  },
+  {
+    "id": "murray",
+    "slug": "murray",
+    "name": "Murray"
+  },
+  {
+    "id": "pittsburgh",
+    "slug": "pittsburgh",
+    "name": "Pittsburgh"
+  },
+  {
+    "id": "predator",
+    "slug": "predator",
+    "name": "Predator"
+  },
+  {
+    "id": "ryobi",
+    "slug": "ryobi",
+    "name": "Ryobi"
+  },
+  {
+    "id": "warrior",
+    "slug": "warrior",
+    "name": "Warrior"
+  }
+]

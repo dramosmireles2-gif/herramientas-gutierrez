@@ -1,0 +1,67 @@
+[
+  {
+    "id": "b-01",
+    "slug": "cd-victoria",
+    "city": "Cd. Victoria",
+    "state": "Tamaulipas",
+    "address": "Dirección por confirmar",
+    "phone": "Teléfono por confirmar",
+    "whatsapp": "528148078309",
+    "hours": "Horario por confirmar",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Ciudad+Victoria%2C+Tamaulipas",
+    "pickup": true,
+    "pending_data": true
+  },
+  {
+    "id": "b-02",
+    "slug": "reynosa",
+    "city": "Reynosa",
+    "state": "Tamaulipas",
+    "address": "Dirección por confirmar",
+    "phone": "Teléfono por confirmar",
+    "whatsapp": "528148078309",
+    "hours": "Horario por confirmar",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Reynosa%2C+Tamaulipas",
+    "pickup": true,
+    "pending_data": true
+  },
+  {
+    "id": "b-03",
+    "slug": "tampico",
+    "city": "Tampico",
+    "state": "Tamaulipas",
+    "address": "Dirección por confirmar",
+    "phone": "Teléfono por confirmar",
+    "whatsapp": "528148078309",
+    "hours": "Horario por confirmar",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Tampico%2C+Tamaulipas",
+    "pickup": true,
+    "pending_data": true
+  },
+  {
+    "id": "b-04",
+    "slug": "saltillo",
+    "city": "Saltillo",
+    "state": "Coahuila",
+    "address": "Dirección por confirmar",
+    "phone": "Teléfono por confirmar",
+    "whatsapp": "528148078309",
+    "hours": "Horario por confirmar",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Saltillo%2C+Coahuila",
+    "pickup": true,
+    "pending_data": true
+  },
+  {
+    "id": "b-05",
+    "slug": "san-nicolas",
+    "city": "San Nicolás de los Garza",
+    "state": "Nuevo León",
+    "address": "Dirección por confirmar",
+    "phone": "Teléfono por confirmar",
+    "whatsapp": "528148078309",
+    "hours": "Horario por confirmar",
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=San+Nicol%C3%A1s+de+los+Garza%2C+Nuevo+Le%C3%B3n",
+    "pickup": true,
+    "pending_data": true
+  }
+]

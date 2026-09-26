@@ -1,0 +1,44 @@
+[
+  {
+    "id": "generadores",
+    "slug": "generadores",
+    "name": "Generadores",
+    "icon": "generador"
+  },
+  {
+    "id": "hidrolavadoras",
+    "slug": "hidrolavadoras",
+    "name": "Hidrolavadoras",
+    "icon": "hidrolavadora"
+  },
+  {
+    "id": "compresores",
+    "slug": "compresores",
+    "name": "Compresores",
+    "icon": "compresor"
+  },
+  {
+    "id": "podadoras",
+    "slug": "podadoras",
+    "name": "Podadoras",
+    "icon": "podadora"
+  },
+  {
+    "id": "carpinteria",
+    "slug": "carpinteria",
+    "name": "Carpintería",
+    "icon": "carpinteria"
+  },
+  {
+    "id": "construccion",
+    "slug": "construccion",
+    "name": "Construcción",
+    "icon": "construccion"
+  },
+  {
+    "id": "automotriz",
+    "slug": "automotriz",
+    "name": "Automotriz",
+    "icon": "automotriz"
+  }
+]
