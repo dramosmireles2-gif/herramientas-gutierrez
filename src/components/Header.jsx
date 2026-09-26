@@ -3,7 +3,7 @@ import Logo from './Logo'
 import SearchBar from './SearchBar'
 import { CartIcon, ChevronDownIcon, PinIcon } from './icons'
 
-// branchName y cartCount se conectan a BranchContext / CartContext en el paso 4.
+// Layout le pasa la sucursal (BranchContext) y el número de piezas (CartContext).
 export default function Header({ branchName = null, cartCount = 0, onBranchClick }) {
   const cartLabel = cartCount === 1 ? '1 producto' : `${cartCount} productos`
 

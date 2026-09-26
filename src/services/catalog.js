@@ -95,7 +95,7 @@ export async function getProducts({
   list = cmp
     ? list.sort((a, b) => cmp(a.p, b.p))
     // Relevancia: puntaje de búsqueda, luego destacados, luego con existencia.
-    : list.sort((a, b) => b.s - a.s || b.p.featured - a.p.featured || b.p.in_stock - a.p.in_stock || byName(a.p, b.p))
+    : list.sort((a, b) => b.s - a.s || b.p.featured - a.p.featured || b.p.in_stock - a.p.in_stock || a.p.sort_order - b.p.sort_order || byName(a.p, b.p))
 
   const items = list.map(({ p }) => p)
   const total = items.length
@@ -115,7 +115,13 @@ export async function getProduct(slug) {
 }
 
 export async function getFeaturedProducts(limit = 8) {
-  return activeProducts.filter((p) => p.featured).slice(0, limit)
+  return activeProducts.filter((p) => p.featured).sort((a, b) => a.sort_order - b.sort_order).slice(0, limit)
+}
+
+/** Productos activos por id, en el mismo orden (para hidratar el carrito). */
+export async function getProductsByIds(ids) {
+  const byId = new Map(activeProducts.map((p) => [p.id, p]))
+  return ids.map((id) => byId.get(id)).filter(Boolean)
 }
 
 /** Misma categoría primero (con existencia), luego misma marca. */

@@ -105,6 +105,7 @@ const products = rows.map((r, i) => {
     specs: d?.specs ?? {},
     images,
     featured: Boolean(d?.featured),
+    sort_order: d?.order ?? 100 + i, // menor = aparece primero (destacados, relevancia)
     active: true,
   }
   if (!hasPrice) product.demo_price = true

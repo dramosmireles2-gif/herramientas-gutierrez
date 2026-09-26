@@ -4,8 +4,10 @@ import { getProduct, getRelatedProducts } from '../services/catalog'
 import { buildProductQuestionUrl } from '../services/whatsapp'
 import { useAsync } from '../hooks/useAsync'
 import { usePageMeta } from '../hooks/usePageMeta'
-import { useContactBranch } from '../hooks/useContactBranch'
+import { useBranch } from '../context/BranchContext'
+import { useCart } from '../context/CartContext'
 import ProductImage from '../components/ProductImage'
+import WhatsAppLink from '../components/WhatsAppLink'
 import Price from '../components/Price'
 import StockBadge from '../components/StockBadge'
 import QuantityStepper from '../components/QuantityStepper'
@@ -58,7 +60,8 @@ export default function Product() {
   const { slug } = useParams()
   const { data: product, loading } = useAsync(() => getProduct(slug), [slug])
   const { data: related } = useAsync(() => getRelatedProducts(product, 4), [product])
-  const branch = useContactBranch()
+  const { branch, openPicker } = useBranch()
+  const { add } = useCart()
   const [qty, setQty] = useState(1)
   useEffect(() => setQty(1), [slug])
 
@@ -68,10 +71,9 @@ export default function Product() {
   if (!product) return <NotFound title="No encontramos este producto" />
 
   const soldOut = product.stock <= 0
-  const askUrl = buildProductQuestionUrl(product, branch, { outOfStock: soldOut })
+  const askUrl = (b) => buildProductQuestionUrl(product, b, { outOfStock: soldOut })
   const specs = Object.entries(product.specs)
-  // El carrito se conecta en el paso 4 (CartContext).
-  const addToCart = () => {}
+  const addToCart = () => add(product, qty)
 
   return (
     <div className="pb-28 lg:pb-0">
@@ -116,11 +118,12 @@ export default function Product() {
                   </button>
                 </div>
               )}
-              {askUrl && (
-                <a href={askUrl} target="_blank" rel="noopener noreferrer" className={`${soldOut ? 'btn-whatsapp' : 'btn border-2 border-whatsapp text-titanio hover:bg-whatsapp/10'} h-12 w-full`}>
-                  <WhatsAppIcon /> {soldOut ? 'Avísame cuando llegue' : 'Preguntar por WhatsApp'}
-                </a>
-              )}
+              <WhatsAppLink
+                buildUrl={askUrl}
+                className={`${soldOut ? 'btn-whatsapp' : 'btn border-2 border-whatsapp text-titanio hover:bg-whatsapp/10'} h-12 w-full`}
+              >
+                <WhatsAppIcon /> {soldOut ? 'Avísame cuando llegue' : 'Preguntar por WhatsApp'}
+              </WhatsAppLink>
             </div>
 
             <ul className="mt-6 space-y-2 rounded-xl bg-blanco p-4 text-sm shadow-sm ring-1 ring-titanio/5">
@@ -128,12 +131,16 @@ export default function Product() {
                 <StoreIcon width={20} height={20} className="shrink-0 text-hielo-texto" />
                 Recoge en tienda en cualquiera de nuestras 5 sucursales
               </li>
-              {branch && (
-                <li className="flex items-center gap-2">
-                  <PinIcon width={20} height={20} className="shrink-0 text-hielo-texto" />
-                  Te atiende la sucursal {branch.city}
-                </li>
-              )}
+              <li className="flex items-center gap-2">
+                <PinIcon width={20} height={20} className="shrink-0 text-hielo-texto" />
+                <span>
+                  {branch ? `Te atiende la sucursal ${branch.city}` : 'Elige tu sucursal para recoger y cotizar'}
+                  {' · '}
+                  <button type="button" onClick={openPicker} className="font-semibold text-hielo-texto hover:underline">
+                    {branch ? 'Cambiar' : 'Elegir'}
+                  </button>
+                </span>
+              </li>
             </ul>
           </div>
         </div>
@@ -174,11 +181,9 @@ export default function Product() {
             <p className="mt-0.5 text-xs text-gris">{soldOut ? 'Agotado' : qty > 1 ? `${qty} piezas` : '1 pieza'}</p>
           </div>
           {soldOut ? (
-            askUrl && (
-              <a href={askUrl} target="_blank" rel="noopener noreferrer" className="btn-whatsapp ml-auto h-12 flex-1">
-                <WhatsAppIcon /> Avísame
-              </a>
-            )
+            <WhatsAppLink buildUrl={askUrl} className="btn-whatsapp ml-auto h-12 flex-1">
+              <WhatsAppIcon /> Avísame
+            </WhatsAppLink>
           ) : (
             <button type="button" onClick={addToCart} className="btn-primary ml-auto h-12 flex-1">
               <CartIcon /> Agregar

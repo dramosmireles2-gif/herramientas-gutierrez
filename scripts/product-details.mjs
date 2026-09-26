@@ -4,7 +4,7 @@
 
 export const details = {
   'generador-10000w-arranque-remoto': {
-    price: 32999, stock: 4, featured: true,
+    price: 32999, stock: 4, featured: true, order: 7,
     short: 'Energía de respaldo para toda la casa o la obra, con arranque a distancia desde el llavero.',
     specs: { 'Potencia máxima': '10,000 W', 'Potencia continua': '8,000 W', 'Motor': '4 tiempos, 459 cc', 'Arranque': 'Remoto, eléctrico y manual', 'Combustible': 'Gasolina', 'Salidas': '120 V / 240 V' },
   },
@@ -29,7 +29,7 @@ export const details = {
     specs: { 'Capacidad': '2 t', 'Tipo': 'Patín, bajo perfil', 'Bomba': 'Doble pistón (Rapid Pump)', 'Material': 'Acero' },
   },
   'generador-inverter-predator-8750': {
-    price: 39999, compare: 42999, stock: 3, featured: true,
+    price: 39999, compare: 42999, stock: 3, featured: true, order: 1,
     short: 'Inverter silencioso con energía limpia para equipo sensible, con ruedas para moverlo fácil.',
     specs: { 'Potencia máxima': '8,750 W', 'Potencia continua': '7,000 W', 'Tecnología': 'Inverter (energía limpia)', 'Arranque': 'Eléctrico y manual', 'Combustible': 'Gasolina', 'Salidas': '120 V / 240 V' },
   },
@@ -39,7 +39,7 @@ export const details = {
     specs: { 'Presión': '3,400 PSI', 'Caudal': '2.5 GPM', 'Motor': 'A gasolina', 'Bomba': 'Axial', 'Boquillas': 'Intercambiables de conexión rápida' },
   },
   'hidrolavadora-dewalt-4400-psi': {
-    price: 27999, stock: 2, featured: true,
+    price: 27999, stock: 2, featured: true, order: 3,
     short: 'Nivel profesional para limpieza pesada de equipo, fachadas y patios de maniobra.',
     specs: { 'Presión': '4,400 PSI', 'Caudal': '4.0 GPM', 'Motor': 'A gasolina, uso comercial', 'Bomba': 'Triplex', 'Chasis': 'Acero con llantas neumáticas' },
   },
@@ -89,7 +89,7 @@ export const details = {
     specs: { 'Ancho de corte': '13"', 'Motor': '15 A', 'Tipo': 'Portátil de espesor', 'Alimentación': '120 V' },
   },
   'compactadora-placa-7hp': {
-    price: 13999, stock: 3, featured: true,
+    price: 13999, stock: 3, featured: true, order: 5,
     short: 'Compacta tierra, grava y adocreto antes de colar o empedrar.',
     specs: { 'Motor': '7 HP a gasolina', 'Tipo': 'Placa vibratoria', 'Uso': 'Tierra, grava y adoquín', 'Extras': 'Tanque de agua para asfalto' },
   },
@@ -119,7 +119,7 @@ export const details = {
     specs: { 'Potencia máxima': '2,500 W', 'Potencia continua': '2,200 W', 'Motor': '4 tiempos', 'Combustible': 'Gasolina', 'Arranque': 'Manual' },
   },
   'generador-predator-4375': {
-    price: 10999, compare: 12499, stock: 5, featured: true,
+    price: 10999, compare: 12499, stock: 5, featured: true, order: 6,
     short: 'El equilibrio entre potencia y precio para obra y respaldo de casa.',
     specs: { 'Potencia máxima': '4,375 W', 'Potencia continua': '3,500 W', 'Motor': '4 tiempos, 212 cc', 'Combustible': 'Gasolina', 'Arranque': 'Manual' },
   },
@@ -144,7 +144,7 @@ export const details = {
     specs: { 'Presión máxima': '200 PSI', 'Alimentación': '120 V', 'Uso': 'Taller y construcción' },
   },
   'podadora-atlas-80v': {
-    price: 11999, stock: 5, featured: true,
+    price: 11999, stock: 5, featured: true, order: 4,
     short: 'Sin gasolina, sin cable, sin jalar cuerda: arranca con un botón y trabaja en silencio.',
     specs: { 'Voltaje': '80 V', 'Motor': 'Eléctrico brushless', 'Arranque': 'Botón', 'Funciones': 'Recolección y mulch' },
   },
@@ -174,7 +174,7 @@ export const details = {
     specs: { 'Potencia máxima': '6,500 W', 'Combustible': 'Gasolina', 'Arranque': 'Manual', 'Salidas': '120 V / 240 V' },
   },
   'generador-inverter-predator-4550': {
-    price: 21999, stock: 4, featured: true,
+    price: 21999, stock: 4, featured: true, order: 2,
     short: 'Súper silencioso y con energía limpia para computadoras, TV y equipo sensible.',
     specs: { 'Potencia máxima': '4,550 W', 'Potencia continua': '3,700 W', 'Tecnología': 'Inverter (energía limpia)', 'Arranque': 'Eléctrico y manual', 'Combustible': 'Gasolina' },
   },

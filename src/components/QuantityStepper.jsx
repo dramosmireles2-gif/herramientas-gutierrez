@@ -1,12 +1,14 @@
 import { MinusIcon, PlusIcon } from './icons'
 
-export default function QuantityStepper({ value, onChange, max, id = 'cantidad' }) {
+export default function QuantityStepper({ value, onChange, max, id = 'cantidad', size = 'md' }) {
   const clamp = (n) => Math.min(Math.max(1, n || 1), Math.max(1, max))
+  const h = size === 'sm' ? 'h-10' : 'h-12'
+  const w = size === 'sm' ? 'w-10' : 'w-11'
   return (
-    <div className="inline-flex h-12 items-center rounded-lg bg-blanco ring-1 ring-titanio/20">
+    <div className={`inline-flex items-center rounded-lg bg-blanco ring-1 ring-titanio/20 ${h}`}>
       <button
         type="button" onClick={() => onChange(clamp(value - 1))} disabled={value <= 1}
-        className="flex h-full w-11 items-center justify-center text-titanio disabled:opacity-40" aria-label="Quitar uno"
+        className={`flex h-full items-center justify-center text-titanio disabled:opacity-40 ${w}`} aria-label="Quitar uno"
       >
         <MinusIcon width={18} height={18} />
       </button>
@@ -18,7 +20,7 @@ export default function QuantityStepper({ value, onChange, max, id = 'cantidad' 
       />
       <button
         type="button" onClick={() => onChange(clamp(value + 1))} disabled={value >= max}
-        className="flex h-full w-11 items-center justify-center text-titanio disabled:opacity-40" aria-label="Agregar uno"
+        className={`flex h-full items-center justify-center text-titanio disabled:opacity-40 ${w}`} aria-label="Agregar uno"
       >
         <PlusIcon width={18} height={18} />
       </button>

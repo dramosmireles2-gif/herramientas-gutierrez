@@ -4,8 +4,8 @@ import { getBranches } from '../services/branches'
 import { buildGeneralUrl } from '../services/whatsapp'
 import { useAsync } from '../hooks/useAsync'
 import { usePageMeta } from '../hooks/usePageMeta'
-import { useContactBranch } from '../hooks/useContactBranch'
 import { ProductGrid, ProductGridSkeleton } from '../components/ProductGrid'
+import WhatsAppLink from '../components/WhatsAppLink'
 import ProductImage from '../components/ProductImage'
 import { CategoryIcon, ChevronRightIcon, PinIcon, ShieldIcon, StoreIcon, WhatsAppIcon } from '../components/icons'
 
@@ -34,7 +34,6 @@ export default function Home() {
   const { data: categories } = useAsync(getCategories, [])
   const { data: brands } = useAsync(getBrands, [])
   const { data: branches } = useAsync(getBranches, [])
-  const contact = useContactBranch()
   const heroProduct = featured?.[0]
 
   return (
@@ -179,11 +178,9 @@ export default function Home() {
               Dinos para qué lo necesitas y te recomendamos el equipo adecuado, con precio y existencia en tu sucursal.
             </p>
           </div>
-          {contact && (
-            <a href={buildGeneralUrl(contact)} target="_blank" rel="noopener noreferrer" className="btn-whatsapp shrink-0">
-              <WhatsAppIcon /> Escríbenos por WhatsApp
-            </a>
-          )}
+          <WhatsAppLink buildUrl={buildGeneralUrl} className="btn-whatsapp shrink-0">
+            <WhatsAppIcon /> Escríbenos por WhatsApp
+          </WhatsAppLink>
         </div>
       </section>
     </>
