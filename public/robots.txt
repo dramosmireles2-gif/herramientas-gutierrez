@@ -1,0 +1,5 @@
+# Demo: no indexar. En GitHub Pages este archivo no queda en la raíz del dominio,
+# así que lo que de verdad aplica es el meta robots noindex de index.html.
+# En producción (dominio propio): cambiar por "Allow: /" y agregar el sitemap.
+User-agent: *
+Disallow: /

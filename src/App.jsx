@@ -6,10 +6,10 @@ import Product from './pages/Product'
 import Cart from './pages/Cart'
 import Checkout from './pages/Checkout'
 import OrderConfirmation from './pages/OrderConfirmation'
+import Branches from './pages/Branches'
+import About from './pages/About'
+import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
-
-// Rutas pendientes muestran un aviso hasta que se construyan en el paso 6.
-const Pending = ({ title }) => <NotFound title={`${title}: próximamente`} />
 
 export default function App() {
   return (
@@ -21,9 +21,9 @@ export default function App() {
         <Route path="carrito" element={<Cart />} />
         <Route path="checkout" element={<Checkout />} />
         <Route path="pedido/:folio" element={<OrderConfirmation />} />
-        <Route path="sucursales" element={<Pending title="Sucursales" />} />
-        <Route path="nosotros" element={<Pending title="Nosotros" />} />
-        <Route path="contacto" element={<Pending title="Contacto" />} />
+        <Route path="sucursales" element={<Branches />} />
+        <Route path="nosotros" element={<About />} />
+        <Route path="contacto" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
