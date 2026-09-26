@@ -5,7 +5,9 @@ dist/
 .env
 .env.*
 
-# Material de trabajo que no va al repo
-Productos/
-_tmp/
-Paletas_*.png
+# Material de trabajo que no va al repo.
+# Anclado con "/" a la raíz: sin él, en Windows (sin distinguir mayúsculas) "Productos/"
+# también ignoraba public/img/productos/ y las fotos del sitio no se subían.
+/Productos/
+/_tmp/
+/Paletas_*.png
