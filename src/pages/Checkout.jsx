@@ -136,7 +136,7 @@ export default function Checkout() {
         {lines.map(({ product, qty, total: lineTotal }) => (
           <li key={product.id} className="flex items-center gap-3 py-3">
             <div className="relative w-14 shrink-0 rounded-md ring-1 ring-titanio/10">
-              <ProductImage src={product.images[0]} alt="" className="rounded-md" />
+              <ProductImage src={product.images[0]} srcSet={product.image_srcsets?.[0]} sizes="56px" alt="" className="rounded-md" />
               <span className="absolute -right-2 -top-2 flex h-5 min-w-5 items-center justify-center rounded-full bg-titanio px-1 text-xs font-bold text-blanco">{qty}</span>
             </div>
             <p className="line-clamp-2 flex-1 text-sm">{product.name}</p>

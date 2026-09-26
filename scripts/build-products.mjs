@@ -1,10 +1,13 @@
-// Genera src/data/{products,categories,brands}.json desde catalogo_borrador.csv
-// y copia las imágenes de Productos_web/ a public/img/productos/.
+// Genera src/data/{products,categories,brands}.json desde catalogo_borrador.csv,
+// copia las imágenes de Productos_web/ a public/img/productos/ y crea miniaturas en public/img/productos/400/.
 // Uso: node scripts/build-products.mjs
 import { copyFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import sharp from 'sharp'
 import { details } from './product-details.mjs'
+
+const THUMB_WIDTH = 400
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const CSV = join(root, 'catalogo_borrador.csv')
@@ -116,6 +119,17 @@ if (errors.length) {
   console.error('Errores:\n- ' + errors.join('\n- '))
   process.exit(1)
 }
+
+// Miniaturas de 400 px para tarjetas y listas (la UI las usa vía srcset; la ficha usa la de 800 px).
+const THUMB_DIR = join(IMG_DEST, String(THUMB_WIDTH))
+mkdirSync(THUMB_DIR, { recursive: true })
+await Promise.all(
+  products.flatMap((p) => p.images).map((path) => {
+    const file = path.split('/').pop()
+    return sharp(join(IMG_DEST, file)).resize(THUMB_WIDTH, THUMB_WIDTH, { fit: 'contain', background: '#ffffff' })
+      .webp({ quality: 78 }).toFile(join(THUMB_DIR, file))
+  }),
+)
 
 mkdirSync(DATA, { recursive: true })
 const write = (name, data) => writeFileSync(join(DATA, name), JSON.stringify(data, null, 2) + '\n')

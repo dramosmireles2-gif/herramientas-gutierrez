@@ -61,7 +61,7 @@ export default function Home() {
               to={`/producto/${heroProduct.slug}`}
               className="hidden rounded-2xl bg-blanco p-6 text-texto shadow-xl md:block"
             >
-              <ProductImage src={heroProduct.images[0]} alt={heroProduct.name} eager />
+              <ProductImage src={heroProduct.images[0]} srcSet={heroProduct.image_srcsets?.[0]} sizes="40vw" alt={heroProduct.name} eager />
               <p className="mt-2 text-xs font-bold uppercase tracking-wide text-gris">{heroProduct.brand?.name}</p>
               <p className="font-semibold">{heroProduct.name}</p>
             </Link>

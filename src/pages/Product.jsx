@@ -15,13 +15,13 @@ import { ProductGrid } from '../components/ProductGrid'
 import { CartIcon, PinIcon, StoreIcon, WhatsAppIcon } from '../components/icons'
 import NotFound from './NotFound'
 
-function Gallery({ images, name }) {
+function Gallery({ images, srcSets = [], name }) {
   const [active, setActive] = useState(0)
   useEffect(() => setActive(0), [images])
   return (
     <div>
       <div className="overflow-hidden rounded-2xl bg-blanco p-4 shadow-sm ring-1 ring-titanio/5 md:p-8">
-        <ProductImage src={images[active]} alt={name} eager />
+        <ProductImage src={images[active]} srcSet={srcSets[active]} sizes="(min-width: 768px) 45vw, 100vw" alt={name} eager />
       </div>
       {images.length > 1 && (
         <ul className="mt-3 flex gap-2">
@@ -32,7 +32,7 @@ function Gallery({ images, name }) {
                 className={`w-16 rounded-lg bg-blanco p-1 ring-2 ${i === active ? 'ring-hielo' : 'ring-transparent'}`}
                 aria-label={`Ver imagen ${i + 1} de ${images.length}`} aria-current={i === active}
               >
-                <ProductImage src={src} alt="" />
+                <ProductImage src={src} srcSet={srcSets[i]} sizes="64px" alt="" />
               </button>
             </li>
           ))}
@@ -92,7 +92,7 @@ export default function Product() {
         </nav>
 
         <div className="grid gap-6 md:grid-cols-2 md:gap-10">
-          <Gallery images={product.images} name={product.name} />
+          <Gallery images={product.images} srcSets={product.image_srcsets} name={product.name} />
 
           <div>
             {product.brand && (

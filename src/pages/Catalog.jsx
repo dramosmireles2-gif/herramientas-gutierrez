@@ -28,9 +28,12 @@ export default function Catalog() {
   }), [params])
   const pagesShown = Math.max(1, num(params.get('ver')) ?? 1)
 
-  const { data: categories } = useAsync(getCategories, [])
-  const { data: brands } = useAsync(getBrands, [])
-  const { data: priceRange } = useAsync(getPriceRange, [])
+  // Datos de filtros en una sola carga (menos re-renders mientras llega la página).
+  const { data: facets } = useAsync(
+    () => Promise.all([getCategories(), getBrands(), getPriceRange()]).then(([categories, brands, priceRange]) => ({ categories, brands, priceRange })),
+    [],
+  )
+  const { categories, brands, priceRange } = facets ?? {}
   const { data: result, loading } = useAsync(
     () => getProducts({ ...filters, page: 1, pageSize: PAGE_SIZE * pagesShown }),
     [params.toString()],
@@ -106,7 +109,8 @@ export default function Catalog() {
           </div>
         </aside>
 
-        <section aria-label="Resultados">
+        <section aria-labelledby="resultados-titulo">
+          <h2 id="resultados-titulo" className="sr-only">Resultados</h2>
           {/* Barra de herramientas */}
           <div className="flex items-center gap-2">
             <button
@@ -167,7 +171,7 @@ export default function Catalog() {
               <EmptyResults query={filters.q} hasFilters={filterCount > 0} onClear={clearAll} categories={categories} />
             ) : (
               <>
-                <ProductGrid products={result.items} eagerCount={4} className="grid-cols-2 md:grid-cols-3 xl:grid-cols-4" />
+                <ProductGrid products={result.items} eagerCount={2}className="grid-cols-2 md:grid-cols-3 xl:grid-cols-4" />
                 <div className="mt-8 text-center">
                   <p className="text-sm text-gris">Viendo {result.items.length} de {total}</p>
                   {result.items.length < total && (

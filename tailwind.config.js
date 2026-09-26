@@ -16,7 +16,7 @@ export default {
       },
       'cta-ink': '#0B2233',
       texto: '#161C24',
-      gris: '#687483',
+      gris: '#5F6B7A', // era #687483: 4.3:1 sobre fondo no pasaba AA; así da 4.9:1
       fondo: '#F1F4F7',
       blanco: '#FFFFFF',
       whatsapp: '#25D366',
@@ -24,7 +24,7 @@ export default {
       agotado: '#C62828',
     },
     fontFamily: {
-      display: ['Archivo', 'system-ui', 'sans-serif'],
+      display: ['"Archivo Variable"', 'Archivo', 'system-ui', 'sans-serif'],
       sans: ['"Public Sans"', 'system-ui', 'sans-serif'],
     },
     extend: {

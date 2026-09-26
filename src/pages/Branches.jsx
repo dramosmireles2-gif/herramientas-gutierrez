@@ -37,6 +37,10 @@ export default function Branches() {
 
       <div className="container-page py-8 md:py-12">
         <ul className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          {/* Reserva el espacio mientras llegan las sucursales para que la página no salte. */}
+          {branches.length === 0 && Array.from({ length: 5 }, (_, i) => (
+            <li key={i} className="h-96 animate-pulse rounded-2xl bg-blanco" aria-hidden="true" />
+          ))}
           {branches.map((b) => {
             const isSelected = selected?.id === b.id
             return (

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#2B3440" />
     <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+    <!-- Precarga de Archivo (títulos): evita que los títulos cambien de ancho al llegar la fuente (CLS). -->
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/node_modules/@fontsource-variable/archivo/files/archivo-latin-wdth-normal.woff2" />
     <title>Herramientas Gutiérrez · Todo para la obra en 5 sucursales del noreste</title>
     <meta name="description" content="Generadores, hidrolavadoras, compresores, podadoras y herramienta para construcción. Compra en línea o pide por WhatsApp y recoge en cualquiera de nuestras 5 sucursales del noreste." />
     <!-- DEMO con datos de ejemplo: que los buscadores no lo indexen. Quitar en producción (y robots.txt). -->
@@ -24,9 +26,6 @@
     <meta property="og:image:alt" content="Herramientas Gutiérrez: todo para la obra en 5 sucursales del noreste" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="https://dramosmireles2-gif.github.io/herramientas-gutierrez/og-image.jpg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,700..900&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div id="root"></div>

@@ -15,7 +15,7 @@ export default function CartLine({ line, onNavigate, compact = false }) {
         onClick={onNavigate}
         className={`shrink-0 self-start rounded-lg bg-blanco ring-1 ring-titanio/10 ${compact ? 'w-20' : 'w-24 sm:w-28'}`}
       >
-        <ProductImage src={product.images[0]} alt={product.name} className="rounded-lg" />
+        <ProductImage src={product.images[0]} srcSet={product.image_srcsets?.[0]} sizes="112px" alt={product.name} className="rounded-lg" />
       </Link>
       <div className="flex min-w-0 flex-1 flex-col">
         <div className="flex justify-between gap-2">

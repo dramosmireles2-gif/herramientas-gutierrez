@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import { Outlet, useMatch } from 'react-router-dom'
 import Header from './Header'
 import Footer from './Footer'
@@ -29,7 +30,10 @@ export default function Layout() {
       </a>
       <Header branchName={branch?.city ?? null} cartCount={count} onBranchClick={openPicker} />
       <main id="contenido" className="flex-1">
-        <Outlet />
+        {/* min-h-screen: mientras carga la página, el footer queda fuera de vista y no "salta" (CLS). */}
+        <Suspense fallback={<div className="min-h-screen" aria-busy="true" />}>
+          <Outlet />
+        </Suspense>
       </main>
       <Footer />
       {!onCheckout && !onOrder && (

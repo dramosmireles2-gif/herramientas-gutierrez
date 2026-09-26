@@ -11,11 +11,21 @@ export const normalize = (s = '') =>
   s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[.,]/g, '').trim()
 
 // Imágenes locales viven en public/ y necesitan el base de GitHub Pages; URLs absolutas (Supabase Storage) pasan tal cual.
-const resolveImage = (src) => (/^https?:\/\//.test(src) ? src : `${import.meta.env.BASE_URL}${src}`)
+const isRemote = (src) => /^https?:\/\//.test(src)
+const resolveImage = (src) => (isRemote(src) ? src : `${import.meta.env.BASE_URL}${src}`)
+
+// srcset con la miniatura de 400 px que genera scripts/build-products.mjs (con Supabase: parámetros de transformación).
+const THUMB_WIDTH = 400
+const toSrcSet = (src) => {
+  if (isRemote(src)) return null
+  const thumb = src.replace(/([^/]+)$/, `${THUMB_WIDTH}/$1`)
+  return `${resolveImage(thumb)} ${THUMB_WIDTH}w, ${resolveImage(src)} 800w`
+}
 
 const hydrate = (p) => ({
   ...p,
   images: p.images.map(resolveImage),
+  image_srcsets: p.images.map(toSrcSet),
   brand: brandById.get(p.brand_id) ?? null,
   category: categoryById.get(p.category_id) ?? null,
   in_stock: p.stock > 0,
