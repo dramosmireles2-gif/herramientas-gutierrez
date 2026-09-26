@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --c-titanio: #2B3440;
+  --c-hielo: #0EA5E9;
+  --c-hielo-hover: #0284C7;
+  --c-hielo-texto: #0369A1;
+  --c-cta-ink: #0B2233;
+  --c-texto: #161C24;
+  --c-gris: #687483;
+  --c-fondo: #F1F4F7;
+  --c-blanco: #FFFFFF;
+  --c-whatsapp: #25D366;
+  --c-ok: #1E7A45;
+  --c-agotado: #C62828;
+}
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    @apply bg-fondo text-texto font-sans antialiased;
+  }
+  h1, h2, h3 {
+    @apply font-display;
+    font-weight: 800;
+    font-stretch: 75%;
+  }
+  :focus-visible {
+    outline: 3px solid var(--c-hielo-texto);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  /* Archivo condensada para títulos, precios y logo */
+  .font-condensed {
+    font-family: Archivo, system-ui, sans-serif;
+    font-weight: 800;
+    font-stretch: 75%;
+  }
+  .price {
+    @apply font-condensed;
+    font-variant-numeric: tabular-nums;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-5 py-3 font-bold transition-colors disabled:opacity-50;
+  }
+  /* CTA principal: texto cta-ink sobre hielo (nunca blanco) */
+  .btn-primary {
+    @apply btn bg-hielo text-cta-ink hover:bg-hielo-hover;
+  }
+  .btn-whatsapp {
+    @apply btn bg-whatsapp text-cta-ink;
+  }
+  .container-page {
+    @apply mx-auto w-full max-w-page px-4 sm:px-6;
+  }
+}

@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+.env
+.env.*
+
+# Material de trabajo que no va al repo
+Productos/
+_tmp/
+Paletas_*.png
