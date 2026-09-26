@@ -11,3 +11,6 @@ dist/
 /Productos/
 /_tmp/
 /Paletas_*.png
+
+# Notas internas del proyecto: solo locales, el repo es público
+/CLAUDE.md
