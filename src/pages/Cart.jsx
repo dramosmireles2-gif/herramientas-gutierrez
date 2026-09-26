@@ -25,7 +25,7 @@ export default function Cart() {
   }
 
   return (
-    <div className="container-page py-6 md:py-10">
+    <div className="container-page py-6 pb-24 md:py-10">
       <nav aria-label="Ruta" className="mb-2 text-sm text-gris">
         <Link to="/" className="hover:underline">Inicio</Link> <span aria-hidden="true">/</span> Carrito
       </nav>

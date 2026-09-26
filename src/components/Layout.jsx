@@ -14,6 +14,9 @@ export default function Layout() {
   const { count } = useCart()
   // En la ficha de producto hay barra CTA fija abajo en móvil: el botón flotante se sube.
   const onProduct = useMatch('/producto/:slug')
+  // En checkout y confirmación ya hay botón de WhatsApp y el flotante tapaba el total.
+  const onCheckout = useMatch('/checkout')
+  const onOrder = useMatch('/pedido/:folio')
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -29,7 +32,9 @@ export default function Layout() {
         <Outlet />
       </main>
       <Footer />
-      <WhatsAppFloat href={buildGeneralUrl(branch)} onNeedBranch={openPicker} raised={Boolean(onProduct)} />
+      {!onCheckout && !onOrder && (
+        <WhatsAppFloat href={buildGeneralUrl(branch)} onNeedBranch={openPicker} raised={Boolean(onProduct)} />
+      )}
       <CartDrawer />
       <BranchPicker />
     </div>
