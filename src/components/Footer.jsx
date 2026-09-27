@@ -48,17 +48,18 @@ export default function Footer() {
               href="https://ramosmkt.lat/"
               target="_blank"
               rel="noopener"
-              className="rounded transition-opacity hover:opacity-80"
+              className="group rounded"
               aria-label="RMKT · Ramos Digital (abre en otra pestaña)"
             >
+              {/* En gris y discreto; recupera sus colores al pasar el cursor o enfocarlo con teclado. */}
               <img
                 src={asset('img/rmkt-logo.webp')}
                 alt=""
-                width={64}
-                height={36}
+                width={50}
+                height={28}
                 loading="lazy"
                 decoding="async"
-                className="h-9 w-auto"
+                className="h-7 w-auto opacity-70 grayscale transition duration-200 group-hover:opacity-100 group-hover:grayscale-0 group-focus-visible:opacity-100 group-focus-visible:grayscale-0"
               />
             </a>
           </p>
