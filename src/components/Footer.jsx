@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Logo from './Logo'
+import { asset } from '../lib/asset'
 
 const links = [
   { to: '/catalogo', label: 'Catálogo' },
@@ -36,9 +37,24 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-blanco/10">
-        <p className="container-page py-4 text-xs text-blanco/70">
-          © {new Date().getFullYear()} Herramientas Gutiérrez. Precios en pesos mexicanos (MXN).
-        </p>
+        {/* En móvil todo va a la izquierda: el botón flotante de WhatsApp ocupa la esquina derecha. */}
+        <div className="container-page flex flex-col gap-3 py-4 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-xs text-blanco/70">
+            © {new Date().getFullYear()} Herramientas Gutiérrez. Precios en pesos mexicanos (MXN).
+          </p>
+          <p className="flex items-center gap-2 text-xs text-blanco/70">
+            Desarrollado por
+            <img
+              src={asset('img/rmkt-logo.webp')}
+              alt="RMKT · Ramos Digital"
+              width={64}
+              height={36}
+              loading="lazy"
+              decoding="async"
+              className="h-9 w-auto"
+            />
+          </p>
+        </div>
       </div>
     </footer>
   )

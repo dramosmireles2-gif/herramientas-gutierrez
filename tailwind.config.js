@@ -16,7 +16,7 @@ export default {
       },
       'cta-ink': '#0B2233',
       texto: '#161C24',
-      gris: '#5F6B7A', // era #687483: 4.3:1 sobre fondo no pasaba AA; así da 4.9:1
+      gris: '#5F6B7A', // 4.9:1 sobre fondo (AA); ver tabla de CLAUDE.md
       fondo: '#F1F4F7',
       blanco: '#FFFFFF',
       whatsapp: '#25D366',
