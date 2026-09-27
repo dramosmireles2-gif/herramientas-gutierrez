@@ -44,15 +44,23 @@ export default function Footer() {
           </p>
           <p className="flex items-center gap-2 text-xs text-blanco/70">
             Desarrollado por
-            <img
-              src={asset('img/rmkt-logo.webp')}
-              alt="RMKT · Ramos Digital"
-              width={64}
-              height={36}
-              loading="lazy"
-              decoding="async"
-              className="h-9 w-auto"
-            />
+            <a
+              href="https://ramosmkt.lat/"
+              target="_blank"
+              rel="noopener"
+              className="rounded transition-opacity hover:opacity-80"
+              aria-label="RMKT · Ramos Digital (abre en otra pestaña)"
+            >
+              <img
+                src={asset('img/rmkt-logo.webp')}
+                alt=""
+                width={64}
+                height={36}
+                loading="lazy"
+                decoding="async"
+                className="h-9 w-auto"
+              />
+            </a>
           </p>
         </div>
       </div>
