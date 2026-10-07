@@ -1,0 +1,15 @@
+/* Estilos propios del panel que no existen en la tienda.
+   Colores y tipografía vienen de la tienda (tailwind.config.js e index.css). */
+
+/* Scroll discreto en la barra lateral oscura */
+.admin-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(255 255 255 / 0.25) transparent;
+}
+.admin-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.admin-scroll::-webkit-scrollbar-thumb {
+  background: rgb(255 255 255 / 0.25);
+  border-radius: 3px;
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "t-1",
+    "folio": "TR-0001",
+    "origen_id": "sal",
+    "destino_id": "tam",
+    "estado": "recibido",
+    "items": [
+      {
+        "producto_id": "p-021",
+        "cantidad": 1
+      },
+      {
+        "producto_id": "p-005",
+        "cantidad": 1
+      }
+    ],
+    "fecha_envio": "2026-09-14T16:15:00.000Z",
+    "fecha_recepcion": "2026-09-16T22:40:00.000Z",
+    "usuario": "Ana Garza"
+  },
+  {
+    "id": "t-2",
+    "folio": "TR-0002",
+    "origen_id": "snn",
+    "destino_id": "rey",
+    "estado": "recibido",
+    "items": [
+      {
+        "producto_id": "p-013",
+        "cantidad": 1
+      },
+      {
+        "producto_id": "p-026",
+        "cantidad": 2
+      }
+    ],
+    "fecha_envio": "2026-09-21T16:15:00.000Z",
+    "fecha_recepcion": "2026-09-22T22:40:00.000Z",
+    "usuario": "Sr. Gutiérrez"
+  },
+  {
+    "id": "t-3",
+    "folio": "TR-0003",
+    "origen_id": "cdv",
+    "destino_id": "sal",
+    "estado": "recibido",
+    "items": [
+      {
+        "producto_id": "p-015",
+        "cantidad": 2
+      },
+      {
+        "producto_id": "p-039",
+        "cantidad": 1
+      }
+    ],
+    "fecha_envio": "2026-09-27T16:15:00.000Z",
+    "fecha_recepcion": "2026-09-28T22:40:00.000Z",
+    "usuario": "Sr. Gutiérrez"
+  },
+  {
+    "id": "t-4",
+    "folio": "TR-0004",
+    "origen_id": "rey",
+    "destino_id": "cdv",
+    "estado": "enviado",
+    "items": [
+      {
+        "producto_id": "p-037",
+        "cantidad": 3
+      },
+      {
+        "producto_id": "p-028",
+        "cantidad": 3
+      }
+    ],
+    "fecha_envio": "2026-10-05T16:15:00.000Z",
+    "fecha_recepcion": null,
+    "usuario": "Carlos Treviño"
+  }
+]

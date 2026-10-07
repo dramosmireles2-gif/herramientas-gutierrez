@@ -1,4 +1,4 @@
-import { lazy } from 'react'
+import { lazy, Suspense } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './pages/Home'
@@ -15,10 +15,20 @@ const OrderConfirmation = lazy(() => import('./pages/OrderConfirmation'))
 const Branches = lazy(() => import('./pages/Branches'))
 const About = lazy(() => import('./pages/About'))
 const Contact = lazy(() => import('./pages/Contact'))
+// Panel administrativo (demo): todo vive en src/admin/, con su propio layout fuera del de la tienda.
+const AdminApp = lazy(() => import('./admin/AdminApp'))
 
 export default function App() {
   return (
     <Routes>
+      <Route
+        path="admin/*"
+        element={
+          <Suspense fallback={<div className="min-h-screen bg-fondo" aria-busy="true" />}>
+            <AdminApp />
+          </Suspense>
+        }
+      />
       <Route element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="catalogo" element={<Catalog />} />

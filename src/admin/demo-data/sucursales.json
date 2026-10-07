@@ -1,0 +1,74 @@
+[
+  {
+    "id": "cdv",
+    "nombre": "Cd. Victoria",
+    "estado": "Tamaulipas",
+    "tipo": "sucursal",
+    "direccion": "Dirección por confirmar",
+    "telefono": "Teléfono por confirmar",
+    "horario": "Horario por confirmar",
+    "permite_recoger": true,
+    "dias_entrega": null,
+    "activa": true
+  },
+  {
+    "id": "rey",
+    "nombre": "Reynosa",
+    "estado": "Tamaulipas",
+    "tipo": "sucursal",
+    "direccion": "Dirección por confirmar",
+    "telefono": "Teléfono por confirmar",
+    "horario": "Horario por confirmar",
+    "permite_recoger": true,
+    "dias_entrega": null,
+    "activa": true
+  },
+  {
+    "id": "sal",
+    "nombre": "Saltillo",
+    "estado": "Coahuila",
+    "tipo": "sucursal",
+    "direccion": "Dirección por confirmar",
+    "telefono": "Teléfono por confirmar",
+    "horario": "Horario por confirmar",
+    "permite_recoger": true,
+    "dias_entrega": null,
+    "activa": true
+  },
+  {
+    "id": "tam",
+    "nombre": "Tampico",
+    "estado": "Tamaulipas",
+    "tipo": "sucursal",
+    "direccion": "Dirección por confirmar",
+    "telefono": "Teléfono por confirmar",
+    "horario": "Horario por confirmar",
+    "permite_recoger": true,
+    "dias_entrega": null,
+    "activa": true
+  },
+  {
+    "id": "snn",
+    "nombre": "San Nicolás de los Garza",
+    "estado": "Nuevo León",
+    "tipo": "sucursal",
+    "direccion": "Dirección por confirmar",
+    "telefono": "Teléfono por confirmar",
+    "horario": "Horario por confirmar",
+    "permite_recoger": true,
+    "dias_entrega": null,
+    "activa": true
+  },
+  {
+    "id": "prov-mty",
+    "nombre": "Proveedor Monterrey",
+    "estado": "Nuevo León",
+    "tipo": "proveedor",
+    "direccion": "Bodega del proveedor (por confirmar)",
+    "telefono": "Teléfono por confirmar",
+    "horario": "Lun a Vie",
+    "permite_recoger": false,
+    "dias_entrega": 5,
+    "activa": true
+  }
+]

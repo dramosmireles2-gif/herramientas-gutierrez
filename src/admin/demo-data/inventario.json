@@ -1,0 +1,1202 @@
+[
+  {
+    "producto_id": "p-001",
+    "sucursal_id": "cdv",
+    "cantidad": 7,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-001",
+    "sucursal_id": "rey",
+    "cantidad": 0,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-001",
+    "sucursal_id": "sal",
+    "cantidad": 9,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-001",
+    "sucursal_id": "tam",
+    "cantidad": 13,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-001",
+    "sucursal_id": "snn",
+    "cantidad": 7,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-002",
+    "sucursal_id": "cdv",
+    "cantidad": 8,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-002",
+    "sucursal_id": "rey",
+    "cantidad": 3,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-002",
+    "sucursal_id": "sal",
+    "cantidad": 14,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-002",
+    "sucursal_id": "tam",
+    "cantidad": 8,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-002",
+    "sucursal_id": "snn",
+    "cantidad": 2,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-003",
+    "sucursal_id": "cdv",
+    "cantidad": 1,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-003",
+    "sucursal_id": "rey",
+    "cantidad": 11,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-003",
+    "sucursal_id": "sal",
+    "cantidad": 5,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-003",
+    "sucursal_id": "tam",
+    "cantidad": 11,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-003",
+    "sucursal_id": "snn",
+    "cantidad": 14,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-004",
+    "sucursal_id": "cdv",
+    "cantidad": 9,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-004",
+    "sucursal_id": "rey",
+    "cantidad": 3,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-004",
+    "sucursal_id": "sal",
+    "cantidad": 11,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-004",
+    "sucursal_id": "tam",
+    "cantidad": 5,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-004",
+    "sucursal_id": "snn",
+    "cantidad": 3,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-005",
+    "sucursal_id": "cdv",
+    "cantidad": 9,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-005",
+    "sucursal_id": "rey",
+    "cantidad": 14,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-005",
+    "sucursal_id": "sal",
+    "cantidad": 5,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-005",
+    "sucursal_id": "tam",
+    "cantidad": 9,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-005",
+    "sucursal_id": "snn",
+    "cantidad": 13,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-006",
+    "sucursal_id": "cdv",
+    "cantidad": 8,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-006",
+    "sucursal_id": "rey",
+    "cantidad": 1,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-006",
+    "sucursal_id": "sal",
+    "cantidad": 1,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-006",
+    "sucursal_id": "tam",
+    "cantidad": 11,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-006",
+    "sucursal_id": "snn",
+    "cantidad": 4,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-007",
+    "sucursal_id": "cdv",
+    "cantidad": 2,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-007",
+    "sucursal_id": "rey",
+    "cantidad": 11,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-007",
+    "sucursal_id": "sal",
+    "cantidad": 7,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-007",
+    "sucursal_id": "tam",
+    "cantidad": 5,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-007",
+    "sucursal_id": "snn",
+    "cantidad": 14,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-008",
+    "sucursal_id": "cdv",
+    "cantidad": 8,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-008",
+    "sucursal_id": "rey",
+    "cantidad": 13,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-008",
+    "sucursal_id": "sal",
+    "cantidad": 0,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-008",
+    "sucursal_id": "tam",
+    "cantidad": 21,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-008",
+    "sucursal_id": "snn",
+    "cantidad": 3,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-009",
+    "sucursal_id": "cdv",
+    "cantidad": 7,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-009",
+    "sucursal_id": "rey",
+    "cantidad": 1,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-009",
+    "sucursal_id": "sal",
+    "cantidad": 7,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-009",
+    "sucursal_id": "tam",
+    "cantidad": 9,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-009",
+    "sucursal_id": "snn",
+    "cantidad": 10,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-010",
+    "sucursal_id": "cdv",
+    "cantidad": 1,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-010",
+    "sucursal_id": "rey",
+    "cantidad": 8,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-010",
+    "sucursal_id": "sal",
+    "cantidad": 2,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-010",
+    "sucursal_id": "tam",
+    "cantidad": 1,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-010",
+    "sucursal_id": "snn",
+    "cantidad": 9,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-011",
+    "sucursal_id": "cdv",
+    "cantidad": 3,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-011",
+    "sucursal_id": "rey",
+    "cantidad": 14,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-011",
+    "sucursal_id": "sal",
+    "cantidad": 2,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-011",
+    "sucursal_id": "tam",
+    "cantidad": 11,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-011",
+    "sucursal_id": "snn",
+    "cantidad": 6,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-012",
+    "sucursal_id": "cdv",
+    "cantidad": 7,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-012",
+    "sucursal_id": "rey",
+    "cantidad": 1,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-012",
+    "sucursal_id": "sal",
+    "cantidad": 10,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-012",
+    "sucursal_id": "tam",
+    "cantidad": 0,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-012",
+    "sucursal_id": "snn",
+    "cantidad": 5,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-013",
+    "sucursal_id": "cdv",
+    "cantidad": 20,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-013",
+    "sucursal_id": "rey",
+    "cantidad": 5,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-013",
+    "sucursal_id": "sal",
+    "cantidad": 15,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-013",
+    "sucursal_id": "tam",
+    "cantidad": 10,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-013",
+    "sucursal_id": "snn",
+    "cantidad": 8,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-014",
+    "sucursal_id": "cdv",
+    "cantidad": 4,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-014",
+    "sucursal_id": "rey",
+    "cantidad": 1,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-014",
+    "sucursal_id": "sal",
+    "cantidad": 14,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-014",
+    "sucursal_id": "tam",
+    "cantidad": 3,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-014",
+    "sucursal_id": "snn",
+    "cantidad": 14,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-015",
+    "sucursal_id": "cdv",
+    "cantidad": 11,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-015",
+    "sucursal_id": "rey",
+    "cantidad": 13,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-015",
+    "sucursal_id": "sal",
+    "cantidad": 11,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-015",
+    "sucursal_id": "tam",
+    "cantidad": 7,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-015",
+    "sucursal_id": "snn",
+    "cantidad": 7,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-016",
+    "sucursal_id": "cdv",
+    "cantidad": 3,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-016",
+    "sucursal_id": "rey",
+    "cantidad": 2,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-016",
+    "sucursal_id": "sal",
+    "cantidad": 8,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-016",
+    "sucursal_id": "tam",
+    "cantidad": 16,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-016",
+    "sucursal_id": "snn",
+    "cantidad": 12,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-017",
+    "sucursal_id": "cdv",
+    "cantidad": 13,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-017",
+    "sucursal_id": "rey",
+    "cantidad": 14,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-017",
+    "sucursal_id": "sal",
+    "cantidad": 9,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-017",
+    "sucursal_id": "tam",
+    "cantidad": 12,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-017",
+    "sucursal_id": "snn",
+    "cantidad": 7,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-018",
+    "sucursal_id": "cdv",
+    "cantidad": 6,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-018",
+    "sucursal_id": "rey",
+    "cantidad": 19,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-018",
+    "sucursal_id": "sal",
+    "cantidad": 0,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-018",
+    "sucursal_id": "tam",
+    "cantidad": 12,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-018",
+    "sucursal_id": "snn",
+    "cantidad": 11,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-019",
+    "sucursal_id": "cdv",
+    "cantidad": 11,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-019",
+    "sucursal_id": "rey",
+    "cantidad": 6,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-019",
+    "sucursal_id": "sal",
+    "cantidad": 21,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-019",
+    "sucursal_id": "tam",
+    "cantidad": 2,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-019",
+    "sucursal_id": "snn",
+    "cantidad": 2,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-020",
+    "sucursal_id": "cdv",
+    "cantidad": 7,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-020",
+    "sucursal_id": "rey",
+    "cantidad": 5,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-020",
+    "sucursal_id": "sal",
+    "cantidad": 4,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-020",
+    "sucursal_id": "tam",
+    "cantidad": 9,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-020",
+    "sucursal_id": "snn",
+    "cantidad": 7,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-021",
+    "sucursal_id": "cdv",
+    "cantidad": 7,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-021",
+    "sucursal_id": "rey",
+    "cantidad": 13,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-021",
+    "sucursal_id": "sal",
+    "cantidad": 9,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-021",
+    "sucursal_id": "tam",
+    "cantidad": 12,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-021",
+    "sucursal_id": "snn",
+    "cantidad": 0,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-022",
+    "sucursal_id": "cdv",
+    "cantidad": 3,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-022",
+    "sucursal_id": "rey",
+    "cantidad": 12,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-022",
+    "sucursal_id": "sal",
+    "cantidad": 6,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-022",
+    "sucursal_id": "tam",
+    "cantidad": 8,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-022",
+    "sucursal_id": "snn",
+    "cantidad": 15,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-023",
+    "sucursal_id": "cdv",
+    "cantidad": 6,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-023",
+    "sucursal_id": "rey",
+    "cantidad": 3,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-023",
+    "sucursal_id": "sal",
+    "cantidad": 0,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-023",
+    "sucursal_id": "tam",
+    "cantidad": 3,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-023",
+    "sucursal_id": "snn",
+    "cantidad": 10,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-024",
+    "sucursal_id": "cdv",
+    "cantidad": 1,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-024",
+    "sucursal_id": "rey",
+    "cantidad": 3,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-024",
+    "sucursal_id": "sal",
+    "cantidad": 7,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-024",
+    "sucursal_id": "tam",
+    "cantidad": 11,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-024",
+    "sucursal_id": "snn",
+    "cantidad": 3,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-025",
+    "sucursal_id": "cdv",
+    "cantidad": 3,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-025",
+    "sucursal_id": "rey",
+    "cantidad": 1,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-025",
+    "sucursal_id": "sal",
+    "cantidad": 10,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-025",
+    "sucursal_id": "tam",
+    "cantidad": 11,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-025",
+    "sucursal_id": "snn",
+    "cantidad": 3,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-026",
+    "sucursal_id": "cdv",
+    "cantidad": 5,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-026",
+    "sucursal_id": "rey",
+    "cantidad": 13,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-026",
+    "sucursal_id": "sal",
+    "cantidad": 3,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-026",
+    "sucursal_id": "tam",
+    "cantidad": 2,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-026",
+    "sucursal_id": "snn",
+    "cantidad": 7,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-027",
+    "sucursal_id": "cdv",
+    "cantidad": 2,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-027",
+    "sucursal_id": "rey",
+    "cantidad": 2,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-027",
+    "sucursal_id": "sal",
+    "cantidad": 9,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-027",
+    "sucursal_id": "tam",
+    "cantidad": 0,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-027",
+    "sucursal_id": "snn",
+    "cantidad": 4,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-028",
+    "sucursal_id": "cdv",
+    "cantidad": 11,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-028",
+    "sucursal_id": "rey",
+    "cantidad": 7,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-028",
+    "sucursal_id": "sal",
+    "cantidad": 0,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-028",
+    "sucursal_id": "tam",
+    "cantidad": 0,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-028",
+    "sucursal_id": "snn",
+    "cantidad": 3,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-029",
+    "sucursal_id": "cdv",
+    "cantidad": 8,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-029",
+    "sucursal_id": "rey",
+    "cantidad": 0,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-029",
+    "sucursal_id": "sal",
+    "cantidad": 5,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-029",
+    "sucursal_id": "tam",
+    "cantidad": 9,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-029",
+    "sucursal_id": "snn",
+    "cantidad": 0,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-030",
+    "sucursal_id": "cdv",
+    "cantidad": 13,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-030",
+    "sucursal_id": "rey",
+    "cantidad": 5,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-030",
+    "sucursal_id": "sal",
+    "cantidad": 0,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-030",
+    "sucursal_id": "tam",
+    "cantidad": 12,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-030",
+    "sucursal_id": "snn",
+    "cantidad": 1,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-031",
+    "sucursal_id": "cdv",
+    "cantidad": 12,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-031",
+    "sucursal_id": "rey",
+    "cantidad": 7,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-031",
+    "sucursal_id": "sal",
+    "cantidad": 11,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-031",
+    "sucursal_id": "tam",
+    "cantidad": 14,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-031",
+    "sucursal_id": "snn",
+    "cantidad": 3,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-032",
+    "sucursal_id": "cdv",
+    "cantidad": 7,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-032",
+    "sucursal_id": "rey",
+    "cantidad": 13,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-032",
+    "sucursal_id": "sal",
+    "cantidad": 10,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-032",
+    "sucursal_id": "tam",
+    "cantidad": 11,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-032",
+    "sucursal_id": "snn",
+    "cantidad": 8,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-033",
+    "sucursal_id": "cdv",
+    "cantidad": 9,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-033",
+    "sucursal_id": "rey",
+    "cantidad": 1,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-033",
+    "sucursal_id": "sal",
+    "cantidad": 8,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-033",
+    "sucursal_id": "tam",
+    "cantidad": 10,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-033",
+    "sucursal_id": "snn",
+    "cantidad": 0,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-034",
+    "sucursal_id": "cdv",
+    "cantidad": 12,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-034",
+    "sucursal_id": "rey",
+    "cantidad": 0,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-034",
+    "sucursal_id": "sal",
+    "cantidad": 7,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-034",
+    "sucursal_id": "tam",
+    "cantidad": 12,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-034",
+    "sucursal_id": "snn",
+    "cantidad": 0,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-035",
+    "sucursal_id": "cdv",
+    "cantidad": 4,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-035",
+    "sucursal_id": "rey",
+    "cantidad": 2,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-035",
+    "sucursal_id": "sal",
+    "cantidad": 2,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-035",
+    "sucursal_id": "tam",
+    "cantidad": 14,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-035",
+    "sucursal_id": "snn",
+    "cantidad": 2,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-036",
+    "sucursal_id": "cdv",
+    "cantidad": 4,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-036",
+    "sucursal_id": "rey",
+    "cantidad": 10,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-036",
+    "sucursal_id": "sal",
+    "cantidad": 11,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-036",
+    "sucursal_id": "tam",
+    "cantidad": 2,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-036",
+    "sucursal_id": "snn",
+    "cantidad": 10,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-037",
+    "sucursal_id": "cdv",
+    "cantidad": 1,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-037",
+    "sucursal_id": "rey",
+    "cantidad": 7,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-037",
+    "sucursal_id": "sal",
+    "cantidad": 4,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-037",
+    "sucursal_id": "tam",
+    "cantidad": 13,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-037",
+    "sucursal_id": "snn",
+    "cantidad": 3,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-038",
+    "sucursal_id": "cdv",
+    "cantidad": 14,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-038",
+    "sucursal_id": "rey",
+    "cantidad": 10,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-038",
+    "sucursal_id": "sal",
+    "cantidad": 3,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-038",
+    "sucursal_id": "tam",
+    "cantidad": 8,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-038",
+    "sucursal_id": "snn",
+    "cantidad": 0,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-039",
+    "sucursal_id": "cdv",
+    "cantidad": 7,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-039",
+    "sucursal_id": "rey",
+    "cantidad": 2,
+    "minimo": 4
+  },
+  {
+    "producto_id": "p-039",
+    "sucursal_id": "sal",
+    "cantidad": 4,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-039",
+    "sucursal_id": "tam",
+    "cantidad": 10,
+    "minimo": 2
+  },
+  {
+    "producto_id": "p-039",
+    "sucursal_id": "snn",
+    "cantidad": 4,
+    "minimo": 3
+  },
+  {
+    "producto_id": "p-s01",
+    "sucursal_id": "prov-mty",
+    "cantidad": 8,
+    "minimo": 0
+  },
+  {
+    "producto_id": "p-s02",
+    "sucursal_id": "prov-mty",
+    "cantidad": 5,
+    "minimo": 0
+  },
+  {
+    "producto_id": "p-s03",
+    "sucursal_id": "prov-mty",
+    "cantidad": 3,
+    "minimo": 0
+  },
+  {
+    "producto_id": "p-s04",
+    "sucursal_id": "prov-mty",
+    "cantidad": 3,
+    "minimo": 0
+  },
+  {
+    "producto_id": "p-s05",
+    "sucursal_id": "prov-mty",
+    "cantidad": 5,
+    "minimo": 0
+  }
+]

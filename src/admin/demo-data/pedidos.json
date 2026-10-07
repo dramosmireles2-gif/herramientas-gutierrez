@@ -1,0 +1,457 @@
+[
+  {
+    "id": "o-1",
+    "folio": "HG-000901",
+    "fecha": "2026-10-06T22:39:00.000Z",
+    "cliente": {
+      "nombre": "Jorge Villarreal",
+      "telefono": "8112345678",
+      "correo": null
+    },
+    "metodo": "recoger",
+    "sucursal_id": "sal",
+    "direccion_envio": null,
+    "subtotal": 429900,
+    "envio": 0,
+    "total": 429900,
+    "estado_pago": "pagado",
+    "estado": "nuevo",
+    "guia_envio": null,
+    "items": [
+      {
+        "producto_id": "p-005",
+        "cantidad": 1,
+        "precio": 429900
+      }
+    ]
+  },
+  {
+    "id": "o-2",
+    "folio": "HG-000902",
+    "fecha": "2026-10-07T01:50:00.000Z",
+    "cliente": {
+      "nombre": "María Elena Cantú",
+      "telefono": "8341122334",
+      "correo": "maría@example.com"
+    },
+    "metodo": "envio",
+    "sucursal_id": "snn",
+    "direccion_envio": "Calle 5 #212, Col. Centro, San Nicolás de los Garza",
+    "subtotal": 13199700,
+    "envio": 0,
+    "total": 13199700,
+    "estado_pago": "pagado",
+    "estado": "nuevo",
+    "guia_envio": null,
+    "items": [
+      {
+        "producto_id": "p-020",
+        "cantidad": 1,
+        "precio": 249900
+      },
+      {
+        "producto_id": "p-028",
+        "cantidad": 1,
+        "precio": 949900
+      },
+      {
+        "producto_id": "p-s03",
+        "cantidad": 1,
+        "precio": 11999900
+      }
+    ]
+  },
+  {
+    "id": "o-3",
+    "folio": "HG-000903",
+    "fecha": "2026-10-05T22:54:00.000Z",
+    "cliente": {
+      "nombre": "Roberto Garza",
+      "telefono": "8999876543",
+      "correo": "roberto@example.com"
+    },
+    "metodo": "recoger",
+    "sucursal_id": "tam",
+    "direccion_envio": null,
+    "subtotal": 2399800,
+    "envio": 0,
+    "total": 2399800,
+    "estado_pago": "pendiente",
+    "estado": "nuevo",
+    "guia_envio": null,
+    "items": [
+      {
+        "producto_id": "p-012",
+        "cantidad": 1,
+        "precio": 1799900
+      },
+      {
+        "producto_id": "p-032",
+        "cantidad": 1,
+        "precio": 599900
+      }
+    ]
+  },
+  {
+    "id": "o-4",
+    "folio": "HG-000904",
+    "fecha": "2026-10-05T17:06:00.000Z",
+    "cliente": {
+      "nombre": "Luisa Hernández",
+      "telefono": "8445566778",
+      "correo": null
+    },
+    "metodo": "envio",
+    "sucursal_id": "rey",
+    "direccion_envio": "Calle 30 #261, Col. Jardines, Reynosa",
+    "subtotal": 4399800,
+    "envio": 0,
+    "total": 4399800,
+    "estado_pago": "pagado",
+    "estado": "preparando",
+    "guia_envio": null,
+    "items": [
+      {
+        "producto_id": "p-017",
+        "cantidad": 1,
+        "precio": 1099900
+      },
+      {
+        "producto_id": "p-001",
+        "cantidad": 1,
+        "precio": 3299900
+      }
+    ]
+  },
+  {
+    "id": "o-5",
+    "folio": "HG-000905",
+    "fecha": "2026-10-04T23:03:00.000Z",
+    "cliente": {
+      "nombre": "Constructora Del Bravo",
+      "telefono": "8999001122",
+      "correo": "constructora@example.com"
+    },
+    "metodo": "recoger",
+    "sucursal_id": "tam",
+    "direccion_envio": null,
+    "subtotal": 1199800,
+    "envio": 0,
+    "total": 1199800,
+    "estado_pago": "pagado",
+    "estado": "preparando",
+    "guia_envio": null,
+    "items": [
+      {
+        "producto_id": "p-036",
+        "cantidad": 1,
+        "precio": 899900
+      },
+      {
+        "producto_id": "p-039",
+        "cantidad": 1,
+        "precio": 299900
+      }
+    ]
+  },
+  {
+    "id": "o-6",
+    "folio": "HG-000906",
+    "fecha": "2026-10-05T01:11:00.000Z",
+    "cliente": {
+      "nombre": "Pedro Martínez",
+      "telefono": "8331234567",
+      "correo": "pedro@example.com"
+    },
+    "metodo": "recoger",
+    "sucursal_id": "rey",
+    "direccion_envio": null,
+    "subtotal": 799800,
+    "envio": 0,
+    "total": 799800,
+    "estado_pago": "pagado",
+    "estado": "listo_para_recoger",
+    "guia_envio": null,
+    "items": [
+      {
+        "producto_id": "p-020",
+        "cantidad": 1,
+        "precio": 249900
+      },
+      {
+        "producto_id": "p-021",
+        "cantidad": 1,
+        "precio": 549900
+      }
+    ]
+  },
+  {
+    "id": "o-7",
+    "folio": "HG-000907",
+    "fecha": "2026-10-04T01:04:00.000Z",
+    "cliente": {
+      "nombre": "Taller Hermanos Leal",
+      "telefono": "8187654321",
+      "correo": null
+    },
+    "metodo": "recoger",
+    "sucursal_id": "snn",
+    "direccion_envio": null,
+    "subtotal": 599900,
+    "envio": 0,
+    "total": 599900,
+    "estado_pago": "pagado",
+    "estado": "listo_para_recoger",
+    "guia_envio": null,
+    "items": [
+      {
+        "producto_id": "p-004",
+        "cantidad": 1,
+        "precio": 599900
+      }
+    ]
+  },
+  {
+    "id": "o-8",
+    "folio": "HG-000908",
+    "fecha": "2026-10-03T23:57:00.000Z",
+    "cliente": {
+      "nombre": "Sofía Ramírez",
+      "telefono": "8442233445",
+      "correo": "sofía@example.com"
+    },
+    "metodo": "envio",
+    "sucursal_id": "tam",
+    "direccion_envio": "Calle 22 #422, Col. Mitras, Tampico",
+    "subtotal": 2399800,
+    "envio": 0,
+    "total": 2399800,
+    "estado_pago": "pagado",
+    "estado": "enviado",
+    "guia_envio": "GUIA-852371",
+    "items": [
+      {
+        "producto_id": "p-012",
+        "cantidad": 1,
+        "precio": 1799900
+      },
+      {
+        "producto_id": "p-004",
+        "cantidad": 1,
+        "precio": 599900
+      }
+    ]
+  },
+  {
+    "id": "o-9",
+    "folio": "HG-000909",
+    "fecha": "2026-10-01T18:03:00.000Z",
+    "cliente": {
+      "nombre": "Daniel Ortiz",
+      "telefono": "8341987654",
+      "correo": "daniel@example.com"
+    },
+    "metodo": "envio",
+    "sucursal_id": "rey",
+    "direccion_envio": "Calle 30 #751, Col. Las Fuentes, Reynosa",
+    "subtotal": 4449700,
+    "envio": 0,
+    "total": 4449700,
+    "estado_pago": "pagado",
+    "estado": "enviado",
+    "guia_envio": "GUIA-208819",
+    "items": [
+      {
+        "producto_id": "p-016",
+        "cantidad": 1,
+        "precio": 249900
+      },
+      {
+        "producto_id": "p-036",
+        "cantidad": 1,
+        "precio": 899900
+      },
+      {
+        "producto_id": "p-s05",
+        "cantidad": 1,
+        "precio": 3299900
+      }
+    ]
+  },
+  {
+    "id": "o-10",
+    "folio": "HG-000910",
+    "fecha": "2026-09-29T00:50:00.000Z",
+    "cliente": {
+      "nombre": "Jardines del Valle",
+      "telefono": "8119988776",
+      "correo": null
+    },
+    "metodo": "recoger",
+    "sucursal_id": "rey",
+    "direccion_envio": null,
+    "subtotal": 1799800,
+    "envio": 0,
+    "total": 1799800,
+    "estado_pago": "pagado",
+    "estado": "entregado",
+    "guia_envio": null,
+    "items": [
+      {
+        "producto_id": "p-004",
+        "cantidad": 1,
+        "precio": 599900
+      },
+      {
+        "producto_id": "p-009",
+        "cantidad": 1,
+        "precio": 1199900
+      }
+    ]
+  },
+  {
+    "id": "o-11",
+    "folio": "HG-000911",
+    "fecha": "2026-09-24T16:42:00.000Z",
+    "cliente": {
+      "nombre": "Andrés Medina",
+      "telefono": "8336655443",
+      "correo": "andrés@example.com"
+    },
+    "metodo": "envio",
+    "sucursal_id": "sal",
+    "direccion_envio": "Calle 39 #183, Col. Jardines, Saltillo",
+    "subtotal": 1399800,
+    "envio": 0,
+    "total": 1399800,
+    "estado_pago": "pagado",
+    "estado": "entregado",
+    "guia_envio": "GUIA-780781",
+    "items": [
+      {
+        "producto_id": "p-017",
+        "cantidad": 1,
+        "precio": 1099900
+      },
+      {
+        "producto_id": "p-039",
+        "cantidad": 1,
+        "precio": 299900
+      }
+    ]
+  },
+  {
+    "id": "o-12",
+    "folio": "HG-000912",
+    "fecha": "2026-09-19T22:14:00.000Z",
+    "cliente": {
+      "nombre": "Paola Elizondo",
+      "telefono": "8998877665",
+      "correo": "paola@example.com"
+    },
+    "metodo": "recoger",
+    "sucursal_id": "sal",
+    "direccion_envio": null,
+    "subtotal": 1199800,
+    "envio": 0,
+    "total": 1199800,
+    "estado_pago": "pagado",
+    "estado": "entregado",
+    "guia_envio": null,
+    "items": [
+      {
+        "producto_id": "p-019",
+        "cantidad": 1,
+        "precio": 749900
+      },
+      {
+        "producto_id": "p-015",
+        "cantidad": 1,
+        "precio": 449900
+      }
+    ]
+  },
+  {
+    "id": "o-13",
+    "folio": "HG-000913",
+    "fecha": "2026-09-12T19:05:00.000Z",
+    "cliente": {
+      "nombre": "Héctor Saldaña",
+      "telefono": "8443322110",
+      "correo": null
+    },
+    "metodo": "envio",
+    "sucursal_id": "rey",
+    "direccion_envio": "Calle 31 #219, Col. Centro, Reynosa",
+    "subtotal": 2949800,
+    "envio": 0,
+    "total": 2949800,
+    "estado_pago": "pagado",
+    "estado": "entregado",
+    "guia_envio": "GUIA-519280",
+    "items": [
+      {
+        "producto_id": "p-019",
+        "cantidad": 1,
+        "precio": 749900
+      },
+      {
+        "producto_id": "p-035",
+        "cantidad": 1,
+        "precio": 2199900
+      }
+    ]
+  },
+  {
+    "id": "o-14",
+    "folio": "HG-000914",
+    "fecha": "2026-09-26T23:55:00.000Z",
+    "cliente": {
+      "nombre": "Ferretería La Esquina",
+      "telefono": "8183344556",
+      "correo": "ferretería@example.com"
+    },
+    "metodo": "recoger",
+    "sucursal_id": "snn",
+    "direccion_envio": null,
+    "subtotal": 749900,
+    "envio": 0,
+    "total": 749900,
+    "estado_pago": "reembolsado",
+    "estado": "cancelado",
+    "guia_envio": null,
+    "items": [
+      {
+        "producto_id": "p-019",
+        "cantidad": 1,
+        "precio": 749900
+      }
+    ]
+  },
+  {
+    "id": "o-15",
+    "folio": "HG-000915",
+    "fecha": "2026-10-02T21:21:00.000Z",
+    "cliente": {
+      "nombre": "Verónica Treviño",
+      "telefono": "8335544332",
+      "correo": "verónica@example.com"
+    },
+    "metodo": "envio",
+    "sucursal_id": "sal",
+    "direccion_envio": "Calle 7 #709, Col. Centro, Saltillo",
+    "subtotal": 949900,
+    "envio": 39900,
+    "total": 989800,
+    "estado_pago": "reembolsado",
+    "estado": "cancelado",
+    "guia_envio": null,
+    "items": [
+      {
+        "producto_id": "p-031",
+        "cantidad": 1,
+        "precio": 949900
+      }
+    ]
+  }
+]

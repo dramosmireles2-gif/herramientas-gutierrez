@@ -1,0 +1,30 @@
+[
+  {
+    "id": "u-admin",
+    "nombre": "Sr. Gutiérrez",
+    "correo": "admin@example.com",
+    "rol": "admin",
+    "sucursal_id": null
+  },
+  {
+    "id": "u-rey",
+    "nombre": "Carlos Treviño",
+    "correo": "reynosa@example.com",
+    "rol": "encargado",
+    "sucursal_id": "rey"
+  },
+  {
+    "id": "u-sal",
+    "nombre": "Ana Garza",
+    "correo": "saltillo@example.com",
+    "rol": "encargado",
+    "sucursal_id": "sal"
+  },
+  {
+    "id": "u-tam",
+    "nombre": "Miguel Salinas",
+    "correo": "tampico@example.com",
+    "rol": "encargado",
+    "sucursal_id": "tam"
+  }
+]
