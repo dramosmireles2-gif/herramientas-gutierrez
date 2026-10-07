@@ -368,8 +368,35 @@ for (const [productoId, sucursalId, objetivo] of ALERTAS) {
 // Más reciente primero; con la misma fecha manda el consecutivo (orden real en que ocurrieron).
 movimientos.sort((a, b) => b.fecha.localeCompare(a.fecha) || b.id.localeCompare(a.id))
 
+// ---------- Configuración (datos de la tienda, envíos y pago) ----------
+// No es una tabla del modelo de la sección 3: en Supabase sería una tabla de una sola fila.
+// Montos en centavos. Tarifas por zona y rango de peso (opción si la paquetería no tiene API).
+const configuracion = {
+  tienda: {
+    nombre: 'Herramientas Gutiérrez',
+    telefono: 'Por confirmar',
+    correo: 'Por confirmar',
+    sitio: 'https://dramosmireles2-gif.github.io/herramientas-gutierrez/',
+  },
+  envios: {
+    gratis_desde: 1000000, // igual que la tienda: envío gratis desde $10,000
+    zonas: [
+      { id: 'local', nombre: 'Local', descripcion: 'Misma ciudad de la sucursal' },
+      { id: 'regional', nombre: 'Regional', descripcion: 'Tamaulipas, Nuevo León y Coahuila' },
+      { id: 'nacional', nombre: 'Nacional', descripcion: 'Resto del país' },
+    ],
+    rangos: [{ hasta_kg: 5 }, { hasta_kg: 20 }, { hasta_kg: 50 }, { hasta_kg: 100 }],
+    tarifas: {
+      local: [9900, 14900, 24900, 39900],
+      regional: [14900, 24900, 44900, 69900],
+      nacional: [24900, 39900, 69900, 119900],
+    },
+  },
+  pagos: { proveedor: 'Openpay', estado: 'pendiente' },
+}
+
 // ---------- Guardar ----------
-const tablas = { sucursales, categorias, productos, inventario, movimientos, traspasos, pedidos, usuarios }
+const tablas = { sucursales, categorias, productos, inventario, movimientos, traspasos, pedidos, usuarios, configuracion }
 for (const [nombre, data] of Object.entries(tablas)) guardar(`${nombre}.json`, data)
 
 const contar = (arr, campo) =>

@@ -7,6 +7,8 @@ import SelectorProducto from '../../components/SelectorProducto'
 import TablaMovimientos from '../../components/TablaMovimientos'
 import { FiltroFecha, FiltroSelect, escribirFiltro, leerFiltros } from '../../components/Filtros'
 import { IconoExcel } from '../../components/iconos'
+import { useAvisos } from '../../components/Avisos'
+import { exportarMovimientos } from '../../utils/exportaciones'
 
 // Fecha local (YYYY-MM-DD) de un ISO, para comparar con los <input type="date">.
 const diaLocal = (iso) => {
@@ -17,6 +19,7 @@ const diaLocal = (iso) => {
 /** Historial (kardex): responde "¿quién movió esto y cuándo?". La sucursal viene del selector superior. */
 export default function Movimientos() {
   const { datos, sucursalFiltro } = useAdmin()
+  const avisar = useAvisos()
   const [params, setParams] = useSearchParams()
   const f = leerFiltros(params, ['desde', 'hasta', 'producto', 'tipo', 'usuario'])
   const filtrar = (clave) => (valor) => escribirFiltro(params, setParams, clave, valor)
@@ -41,7 +44,19 @@ export default function Movimientos() {
         titulo="Movimientos"
         descripcion={`Cada cambio de existencia queda registrado con fecha, usuario y motivo. Mostrando ${alcance}.`}
         acciones={
-          <button type="button" disabled title="Disponible en la fase 4" className="btn bg-blanco text-titanio ring-1 ring-titanio/15">
+          <button
+            type="button"
+            onClick={async () => {
+              try {
+                await exportarMovimientos(datos, movimientos)
+                avisar(`${movimientos.length} movimientos exportados a Excel.`)
+              } catch {
+                avisar('No se pudo generar el archivo.', 'error')
+              }
+            }}
+            disabled={!movimientos.length}
+            className="btn bg-blanco text-titanio ring-1 ring-titanio/15 hover:bg-fondo"
+          >
             <IconoExcel width={20} height={20} /> Exportar a Excel
           </button>
         }

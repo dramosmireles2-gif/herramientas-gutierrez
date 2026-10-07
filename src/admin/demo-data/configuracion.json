@@ -1,0 +1,66 @@
+{
+  "tienda": {
+    "nombre": "Herramientas Gutiérrez",
+    "telefono": "Por confirmar",
+    "correo": "Por confirmar",
+    "sitio": "https://dramosmireles2-gif.github.io/herramientas-gutierrez/"
+  },
+  "envios": {
+    "gratis_desde": 1000000,
+    "zonas": [
+      {
+        "id": "local",
+        "nombre": "Local",
+        "descripcion": "Misma ciudad de la sucursal"
+      },
+      {
+        "id": "regional",
+        "nombre": "Regional",
+        "descripcion": "Tamaulipas, Nuevo León y Coahuila"
+      },
+      {
+        "id": "nacional",
+        "nombre": "Nacional",
+        "descripcion": "Resto del país"
+      }
+    ],
+    "rangos": [
+      {
+        "hasta_kg": 5
+      },
+      {
+        "hasta_kg": 20
+      },
+      {
+        "hasta_kg": 50
+      },
+      {
+        "hasta_kg": 100
+      }
+    ],
+    "tarifas": {
+      "local": [
+        9900,
+        14900,
+        24900,
+        39900
+      ],
+      "regional": [
+        14900,
+        24900,
+        44900,
+        69900
+      ],
+      "nacional": [
+        24900,
+        39900,
+        69900,
+        119900
+      ]
+    }
+  },
+  "pagos": {
+    "proveedor": "Openpay",
+    "estado": "pendiente"
+  }
+}

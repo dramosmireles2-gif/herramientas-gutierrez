@@ -9,6 +9,7 @@ import movimientos from '../demo-data/movimientos.json'
 import traspasos from '../demo-data/traspasos.json'
 import pedidos from '../demo-data/pedidos.json'
 import usuarios from '../demo-data/usuarios.json'
+import configuracion from '../demo-data/configuracion.json'
 
 const recorrer = (iso, delta) => (iso ? new Date(new Date(iso).getTime() + delta).toISOString() : iso)
 const MARGEN_MS = 5 * 60 * 1000
@@ -33,5 +34,6 @@ export function datosIniciales(ahora = new Date()) {
     traspasos: clon(traspasos).map((t) => ({ ...t, fecha_envio: recorrer(t.fecha_envio, delta), fecha_recepcion: recorrer(t.fecha_recepcion, delta) })),
     pedidos: clon(pedidos).map((p) => ({ ...p, fecha: recorrer(p.fecha, delta) })),
     usuarios: clon(usuarios),
+    configuracion: clon(configuracion),
   }
 }
