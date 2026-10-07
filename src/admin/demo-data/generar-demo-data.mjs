@@ -148,12 +148,19 @@ const inventariados = productos.filter((p) => p.tipo === 'inventariado')
 const precioVigente = (p) => p.precio_oferta ?? p.precio
 const esSobrePedido = (id) => productos.find((p) => p.id === id).tipo === 'sobre_pedido'
 
+// Casos garantizados para el dashboard y los filtros: [producto, sucursal, existencia final].
+// Arrancan con poca existencia para que la venta que los deja así sea pequeña (sin picos en la gráfica).
+const ALERTAS = [['p-001', 'rey', 0], ['p-008', 'sal', 0], ['p-028', 'tam', 0], ['p-024', 'cdv', 1], ['p-014', 'rey', 1], ['p-030', 'snn', 1], ['p-006', 'sal', 1]]
+const alerta = (productoId, sucursalId) => ALERTAS.find(([p, s]) => p === productoId && s === sucursalId)
+
 // ---------- Inventario inicial (hace ~31 días) ----------
 // Una fila por producto y ubicación: inventariados × 5 sucursales; sobre pedido × proveedor.
 const inventario = []
 for (const p of inventariados) {
   for (const s of SUC) {
-    inventario.push({ producto_id: p.id, sucursal_id: s, cantidad: entre(0, 4) === 0 ? entre(0, 2) : entre(3, 14), minimo: entre(2, 4) })
+    const a = alerta(p.id, s)
+    const cantidad = a ? a[2] + entre(1, 2) : entre(0, 4) === 0 ? entre(0, 2) : entre(3, 14)
+    inventario.push({ producto_id: p.id, sucursal_id: s, cantidad, minimo: entre(2, 4) })
   }
 }
 for (const p of SOBRE_PEDIDO) inventario.push({ producto_id: p.id, sucursal_id: 'prov-mty', cantidad: entre(2, 8), minimo: 0 })
@@ -290,9 +297,11 @@ const pedidos = PLAN_PEDIDOS.map(([estado, metodo, dias], i) => {
     const p = elegir(inventariados)
     if (!items.some((it) => it.producto_id === p.id)) items.push({ producto_id: p.id, cantidad: 1, precio: precioVigente(p) })
   }
-  // Dos pedidos llevan un producto sobre pedido (se surte del proveedor)
-  if (i === 1 || i === 8) {
-    const p = elegir(SOBRE_PEDIDO)
+  // Dos pedidos llevan un producto sobre pedido (se surte del proveedor). Se fijan el tractor y la
+  // revolvedora: el generador de 30 kVA haría un pico en la gráfica que aplana el resto de los días.
+  const sobrePedido = { 1: 'POD-101', 8: 'CON-101' }[i]
+  if (sobrePedido) {
+    const p = SOBRE_PEDIDO.find((x) => x.sku === sobrePedido)
     items.push({ producto_id: p.id, cantidad: 1, precio: p.precio })
   }
   const subtotal = items.reduce((n, it) => n + it.precio * it.cantidad, 0)
@@ -345,20 +354,16 @@ pedidos.forEach((p, i) => {
 // ---------- Ejecutar en orden cronológico ----------
 eventos.sort((a, b) => a.fecha.localeCompare(b.fecha)).forEach((e) => e.run(e.fecha))
 
-// Casos garantizados para dashboard y filtros: agotados y bajo el mínimo (venta de mostrador de hoy).
-const llevarA = (productoId, sucursalId, objetivo) => {
+// Deja los casos de ALERTAS en su existencia final con una venta de mostrador en la última semana,
+// siempre después del último movimiento de ese producto en esa sucursal (la cadena sigue cuadrando).
+for (const [productoId, sucursalId, objetivo] of ALERTAS) {
   const fi = fila(productoId, sucursalId)
-  if (fi.cantidad > objetivo) {
-    mover({ fecha: fecha(0, 11, entre(0, 50)), producto_id: productoId, sucursal_id: sucursalId, tipo: 'venta', cantidad: objetivo - fi.cantidad, referencia: `Ticket ${entre(10000, 99999)} · mostrador` })
-  }
+  if (fi.cantidad <= objetivo) continue
+  const ultimo = movimientos.filter((m) => m.producto_id === productoId && m.sucursal_id === sucursalId).map((m) => m.fecha).sort().at(-1)
+  const candidata = fecha(entre(0, 6), entre(10, 17), entre(0, 59))
+  const f = ultimo && candidata <= ultimo ? sumarHoras(ultimo, 2) : candidata
+  mover({ fecha: f, producto_id: productoId, sucursal_id: sucursalId, tipo: 'venta', cantidad: objetivo - fi.cantidad, referencia: `Ticket ${entre(10000, 99999)} · mostrador` })
 }
-llevarA('p-001', 'rey', 0)
-llevarA('p-008', 'sal', 0)
-llevarA('p-028', 'tam', 0)
-llevarA('p-024', 'cdv', 1)
-llevarA('p-014', 'rey', 1)
-llevarA('p-030', 'snn', 1)
-llevarA('p-006', 'sal', 1)
 
 // Más reciente primero; con la misma fecha manda el consecutivo (orden real en que ocurrieron).
 movimientos.sort((a, b) => b.fecha.localeCompare(a.fecha) || b.id.localeCompare(a.id))

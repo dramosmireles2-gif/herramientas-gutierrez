@@ -15,6 +15,7 @@ import Movimientos from './pages/movimientos/Movimientos'
 import Traspasos from './pages/traspasos/Traspasos'
 import NuevoTraspaso from './pages/traspasos/NuevoTraspaso'
 import Pedidos from './pages/pedidos/Pedidos'
+import DetallePedido from './pages/pedidos/DetallePedido'
 import ImportarExportar from './pages/importar-exportar/ImportarExportar'
 import Sucursales from './pages/sucursales/Sucursales'
 import Usuarios from './pages/usuarios/Usuarios'
@@ -45,6 +46,7 @@ export default function AdminApp() {
             <Route path="traspasos" element={<Traspasos />} />
             <Route path="traspasos/nuevo" element={<NuevoTraspaso />} />
             <Route path="pedidos" element={<Pedidos />} />
+            <Route path="pedidos/:id" element={<DetallePedido />} />
             <Route path="importar-exportar" element={<ImportarExportar />} />
             <Route path="sucursales" element={<Sucursales />} />
             <Route path="usuarios" element={<Usuarios />} />

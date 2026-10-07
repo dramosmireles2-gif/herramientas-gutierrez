@@ -2,7 +2,7 @@
   {
     "id": "o-1",
     "folio": "HG-000901",
-    "fecha": "2026-10-06T22:39:00.000Z",
+    "fecha": "2026-10-07T01:17:00.000Z",
     "cliente": {
       "nombre": "Jorge Villarreal",
       "telefono": "8112345678",
@@ -11,99 +11,125 @@
     "metodo": "recoger",
     "sucursal_id": "sal",
     "direccion_envio": null,
-    "subtotal": 429900,
+    "subtotal": 929800,
     "envio": 0,
-    "total": 429900,
+    "total": 929800,
     "estado_pago": "pagado",
     "estado": "nuevo",
     "guia_envio": null,
     "items": [
       {
-        "producto_id": "p-005",
+        "producto_id": "p-032",
         "cantidad": 1,
-        "precio": 429900
+        "precio": 599900
+      },
+      {
+        "producto_id": "p-014",
+        "cantidad": 1,
+        "precio": 329900
       }
     ]
   },
   {
     "id": "o-2",
     "folio": "HG-000902",
-    "fecha": "2026-10-07T01:50:00.000Z",
+    "fecha": "2026-10-06T16:38:00.000Z",
     "cliente": {
       "nombre": "María Elena Cantú",
       "telefono": "8341122334",
       "correo": "maría@example.com"
     },
     "metodo": "envio",
-    "sucursal_id": "snn",
-    "direccion_envio": "Calle 5 #212, Col. Centro, San Nicolás de los Garza",
-    "subtotal": 13199700,
+    "sucursal_id": "sal",
+    "direccion_envio": "Calle 27 #926, Col. Mitras, Saltillo",
+    "subtotal": 7599800,
     "envio": 0,
-    "total": 13199700,
+    "total": 7599800,
     "estado_pago": "pagado",
     "estado": "nuevo",
     "guia_envio": null,
     "items": [
       {
-        "producto_id": "p-020",
+        "producto_id": "p-017",
         "cantidad": 1,
-        "precio": 249900
+        "precio": 1099900
       },
       {
-        "producto_id": "p-028",
+        "producto_id": "p-s04",
         "cantidad": 1,
-        "precio": 949900
-      },
-      {
-        "producto_id": "p-s03",
-        "cantidad": 1,
-        "precio": 11999900
+        "precio": 6499900
       }
     ]
   },
   {
     "id": "o-3",
     "folio": "HG-000903",
-    "fecha": "2026-10-05T22:54:00.000Z",
+    "fecha": "2026-10-06T01:06:00.000Z",
     "cliente": {
       "nombre": "Roberto Garza",
       "telefono": "8999876543",
       "correo": "roberto@example.com"
     },
     "metodo": "recoger",
-    "sucursal_id": "tam",
+    "sucursal_id": "sal",
     "direccion_envio": null,
-    "subtotal": 2399800,
+    "subtotal": 3599800,
     "envio": 0,
-    "total": 2399800,
+    "total": 3599800,
     "estado_pago": "pendiente",
     "estado": "nuevo",
     "guia_envio": null,
     "items": [
       {
-        "producto_id": "p-012",
+        "producto_id": "p-018",
         "cantidad": 1,
-        "precio": 1799900
+        "precio": 1399900
       },
       {
-        "producto_id": "p-032",
+        "producto_id": "p-035",
         "cantidad": 1,
-        "precio": 599900
+        "precio": 2199900
       }
     ]
   },
   {
     "id": "o-4",
     "folio": "HG-000904",
-    "fecha": "2026-10-05T17:06:00.000Z",
+    "fecha": "2026-10-06T02:17:00.000Z",
     "cliente": {
       "nombre": "Luisa Hernández",
       "telefono": "8445566778",
       "correo": null
     },
     "metodo": "envio",
+    "sucursal_id": "cdv",
+    "direccion_envio": "Calle 33 #696, Col. Jardines, Cd. Victoria",
+    "subtotal": 1199900,
+    "envio": 0,
+    "total": 1199900,
+    "estado_pago": "pagado",
+    "estado": "preparando",
+    "guia_envio": null,
+    "items": [
+      {
+        "producto_id": "p-029",
+        "cantidad": 1,
+        "precio": 1199900
+      }
+    ]
+  },
+  {
+    "id": "o-5",
+    "folio": "HG-000905",
+    "fecha": "2026-10-04T17:06:00.000Z",
+    "cliente": {
+      "nombre": "Constructora Del Bravo",
+      "telefono": "8999001122",
+      "correo": "constructora@example.com"
+    },
+    "metodo": "recoger",
     "sucursal_id": "rey",
-    "direccion_envio": "Calle 30 #261, Col. Jardines, Reynosa",
+    "direccion_envio": null,
     "subtotal": 4399800,
     "envio": 0,
     "total": 4399800,
@@ -124,62 +150,26 @@
     ]
   },
   {
-    "id": "o-5",
-    "folio": "HG-000905",
-    "fecha": "2026-10-04T23:03:00.000Z",
-    "cliente": {
-      "nombre": "Constructora Del Bravo",
-      "telefono": "8999001122",
-      "correo": "constructora@example.com"
-    },
-    "metodo": "recoger",
-    "sucursal_id": "tam",
-    "direccion_envio": null,
-    "subtotal": 1199800,
-    "envio": 0,
-    "total": 1199800,
-    "estado_pago": "pagado",
-    "estado": "preparando",
-    "guia_envio": null,
-    "items": [
-      {
-        "producto_id": "p-036",
-        "cantidad": 1,
-        "precio": 899900
-      },
-      {
-        "producto_id": "p-039",
-        "cantidad": 1,
-        "precio": 299900
-      }
-    ]
-  },
-  {
     "id": "o-6",
     "folio": "HG-000906",
-    "fecha": "2026-10-05T01:11:00.000Z",
+    "fecha": "2026-10-05T00:55:00.000Z",
     "cliente": {
       "nombre": "Pedro Martínez",
       "telefono": "8331234567",
       "correo": "pedro@example.com"
     },
     "metodo": "recoger",
-    "sucursal_id": "rey",
+    "sucursal_id": "tam",
     "direccion_envio": null,
-    "subtotal": 799800,
+    "subtotal": 549900,
     "envio": 0,
-    "total": 799800,
+    "total": 549900,
     "estado_pago": "pagado",
     "estado": "listo_para_recoger",
     "guia_envio": null,
     "items": [
       {
-        "producto_id": "p-020",
-        "cantidad": 1,
-        "precio": 249900
-      },
-      {
-        "producto_id": "p-021",
+        "producto_id": "p-038",
         "cantidad": 1,
         "precio": 549900
       }
@@ -188,7 +178,7 @@
   {
     "id": "o-7",
     "folio": "HG-000907",
-    "fecha": "2026-10-04T01:04:00.000Z",
+    "fecha": "2026-10-03T18:37:00.000Z",
     "cliente": {
       "nombre": "Taller Hermanos Leal",
       "telefono": "8187654321",
@@ -197,79 +187,79 @@
     "metodo": "recoger",
     "sucursal_id": "snn",
     "direccion_envio": null,
-    "subtotal": 599900,
+    "subtotal": 2899800,
     "envio": 0,
-    "total": 599900,
+    "total": 2899800,
     "estado_pago": "pagado",
     "estado": "listo_para_recoger",
     "guia_envio": null,
     "items": [
       {
-        "producto_id": "p-004",
+        "producto_id": "p-027",
         "cantidad": 1,
-        "precio": 599900
+        "precio": 1999900
+      },
+      {
+        "producto_id": "p-003",
+        "cantidad": 1,
+        "precio": 899900
       }
     ]
   },
   {
     "id": "o-8",
     "folio": "HG-000908",
-    "fecha": "2026-10-03T23:57:00.000Z",
+    "fecha": "2026-10-04T02:27:00.000Z",
     "cliente": {
       "nombre": "Sofía Ramírez",
       "telefono": "8442233445",
       "correo": "sofía@example.com"
     },
     "metodo": "envio",
-    "sucursal_id": "tam",
-    "direccion_envio": "Calle 22 #422, Col. Mitras, Tampico",
-    "subtotal": 2399800,
+    "sucursal_id": "sal",
+    "direccion_envio": "Calle 5 #899, Col. Del Valle, Saltillo",
+    "subtotal": 4999800,
     "envio": 0,
-    "total": 2399800,
+    "total": 4999800,
     "estado_pago": "pagado",
     "estado": "enviado",
-    "guia_envio": "GUIA-852371",
+    "guia_envio": "GUIA-741130",
     "items": [
       {
-        "producto_id": "p-012",
+        "producto_id": "p-035",
         "cantidad": 1,
-        "precio": 1799900
+        "precio": 2199900
       },
       {
-        "producto_id": "p-004",
+        "producto_id": "p-008",
         "cantidad": 1,
-        "precio": 599900
+        "precio": 2799900
       }
     ]
   },
   {
     "id": "o-9",
     "folio": "HG-000909",
-    "fecha": "2026-10-01T18:03:00.000Z",
+    "fecha": "2026-10-01T23:57:00.000Z",
     "cliente": {
       "nombre": "Daniel Ortiz",
       "telefono": "8341987654",
       "correo": "daniel@example.com"
     },
     "metodo": "envio",
-    "sucursal_id": "rey",
-    "direccion_envio": "Calle 30 #751, Col. Las Fuentes, Reynosa",
-    "subtotal": 4449700,
+    "sucursal_id": "tam",
+    "direccion_envio": "Calle 22 #422, Col. Mitras, Tampico",
+    "subtotal": 3899800,
     "envio": 0,
-    "total": 4449700,
+    "total": 3899800,
     "estado_pago": "pagado",
     "estado": "enviado",
-    "guia_envio": "GUIA-208819",
+    "guia_envio": "GUIA-852371",
     "items": [
       {
-        "producto_id": "p-016",
+        "producto_id": "p-004",
         "cantidad": 1,
-        "precio": 249900
-      },
-      {
-        "producto_id": "p-036",
-        "cantidad": 1,
-        "precio": 899900
+        "precio": 599900
       },
       {
         "producto_id": "p-s05",
@@ -281,7 +271,7 @@
   {
     "id": "o-10",
     "folio": "HG-000910",
-    "fecha": "2026-09-29T00:50:00.000Z",
+    "fecha": "2026-09-29T01:16:00.000Z",
     "cliente": {
       "nombre": "Jardines del Valle",
       "telefono": "8119988776",
@@ -290,12 +280,105 @@
     "metodo": "recoger",
     "sucursal_id": "rey",
     "direccion_envio": null,
-    "subtotal": 1799800,
+    "subtotal": 1149800,
     "envio": 0,
-    "total": 1799800,
+    "total": 1149800,
     "estado_pago": "pagado",
     "estado": "entregado",
     "guia_envio": null,
+    "items": [
+      {
+        "producto_id": "p-016",
+        "cantidad": 1,
+        "precio": 249900
+      },
+      {
+        "producto_id": "p-036",
+        "cantidad": 1,
+        "precio": 899900
+      }
+    ]
+  },
+  {
+    "id": "o-11",
+    "folio": "HG-000911",
+    "fecha": "2026-09-24T16:22:00.000Z",
+    "cliente": {
+      "nombre": "Andrés Medina",
+      "telefono": "8336655443",
+      "correo": "andrés@example.com"
+    },
+    "metodo": "envio",
+    "sucursal_id": "cdv",
+    "direccion_envio": "Calle 35 #187, Col. Centro, Cd. Victoria",
+    "subtotal": 2599800,
+    "envio": 0,
+    "total": 2599800,
+    "estado_pago": "pagado",
+    "estado": "entregado",
+    "guia_envio": "GUIA-831667",
+    "items": [
+      {
+        "producto_id": "p-029",
+        "cantidad": 1,
+        "precio": 1199900
+      },
+      {
+        "producto_id": "p-018",
+        "cantidad": 1,
+        "precio": 1399900
+      }
+    ]
+  },
+  {
+    "id": "o-12",
+    "folio": "HG-000912",
+    "fecha": "2026-09-20T02:09:00.000Z",
+    "cliente": {
+      "nombre": "Paola Elizondo",
+      "telefono": "8998877665",
+      "correo": "paola@example.com"
+    },
+    "metodo": "recoger",
+    "sucursal_id": "snn",
+    "direccion_envio": null,
+    "subtotal": 2899800,
+    "envio": 0,
+    "total": 2899800,
+    "estado_pago": "pagado",
+    "estado": "entregado",
+    "guia_envio": null,
+    "items": [
+      {
+        "producto_id": "p-034",
+        "cantidad": 1,
+        "precio": 1799900
+      },
+      {
+        "producto_id": "p-017",
+        "cantidad": 1,
+        "precio": 1099900
+      }
+    ]
+  },
+  {
+    "id": "o-13",
+    "folio": "HG-000913",
+    "fecha": "2026-09-13T00:30:00.000Z",
+    "cliente": {
+      "nombre": "Héctor Saldaña",
+      "telefono": "8443322110",
+      "correo": null
+    },
+    "metodo": "envio",
+    "sucursal_id": "tam",
+    "direccion_envio": "Calle 29 #531, Col. Centro, Tampico",
+    "subtotal": 1199800,
+    "envio": 0,
+    "total": 1199800,
+    "estado_pago": "pagado",
+    "estado": "entregado",
+    "guia_envio": "GUIA-661432",
     "items": [
       {
         "producto_id": "p-004",
@@ -303,143 +386,50 @@
         "precio": 599900
       },
       {
-        "producto_id": "p-009",
+        "producto_id": "p-032",
         "cantidad": 1,
-        "precio": 1199900
-      }
-    ]
-  },
-  {
-    "id": "o-11",
-    "folio": "HG-000911",
-    "fecha": "2026-09-24T16:42:00.000Z",
-    "cliente": {
-      "nombre": "Andrés Medina",
-      "telefono": "8336655443",
-      "correo": "andrés@example.com"
-    },
-    "metodo": "envio",
-    "sucursal_id": "sal",
-    "direccion_envio": "Calle 39 #183, Col. Jardines, Saltillo",
-    "subtotal": 1399800,
-    "envio": 0,
-    "total": 1399800,
-    "estado_pago": "pagado",
-    "estado": "entregado",
-    "guia_envio": "GUIA-780781",
-    "items": [
-      {
-        "producto_id": "p-017",
-        "cantidad": 1,
-        "precio": 1099900
-      },
-      {
-        "producto_id": "p-039",
-        "cantidad": 1,
-        "precio": 299900
-      }
-    ]
-  },
-  {
-    "id": "o-12",
-    "folio": "HG-000912",
-    "fecha": "2026-09-19T22:14:00.000Z",
-    "cliente": {
-      "nombre": "Paola Elizondo",
-      "telefono": "8998877665",
-      "correo": "paola@example.com"
-    },
-    "metodo": "recoger",
-    "sucursal_id": "sal",
-    "direccion_envio": null,
-    "subtotal": 1199800,
-    "envio": 0,
-    "total": 1199800,
-    "estado_pago": "pagado",
-    "estado": "entregado",
-    "guia_envio": null,
-    "items": [
-      {
-        "producto_id": "p-019",
-        "cantidad": 1,
-        "precio": 749900
-      },
-      {
-        "producto_id": "p-015",
-        "cantidad": 1,
-        "precio": 449900
-      }
-    ]
-  },
-  {
-    "id": "o-13",
-    "folio": "HG-000913",
-    "fecha": "2026-09-12T19:05:00.000Z",
-    "cliente": {
-      "nombre": "Héctor Saldaña",
-      "telefono": "8443322110",
-      "correo": null
-    },
-    "metodo": "envio",
-    "sucursal_id": "rey",
-    "direccion_envio": "Calle 31 #219, Col. Centro, Reynosa",
-    "subtotal": 2949800,
-    "envio": 0,
-    "total": 2949800,
-    "estado_pago": "pagado",
-    "estado": "entregado",
-    "guia_envio": "GUIA-519280",
-    "items": [
-      {
-        "producto_id": "p-019",
-        "cantidad": 1,
-        "precio": 749900
-      },
-      {
-        "producto_id": "p-035",
-        "cantidad": 1,
-        "precio": 2199900
+        "precio": 599900
       }
     ]
   },
   {
     "id": "o-14",
     "folio": "HG-000914",
-    "fecha": "2026-09-26T23:55:00.000Z",
+    "fecha": "2026-09-26T20:52:00.000Z",
     "cliente": {
       "nombre": "Ferretería La Esquina",
       "telefono": "8183344556",
       "correo": "ferretería@example.com"
     },
     "metodo": "recoger",
-    "sucursal_id": "snn",
+    "sucursal_id": "rey",
     "direccion_envio": null,
-    "subtotal": 749900,
+    "subtotal": 899900,
     "envio": 0,
-    "total": 749900,
+    "total": 899900,
     "estado_pago": "reembolsado",
     "estado": "cancelado",
     "guia_envio": null,
     "items": [
       {
-        "producto_id": "p-019",
+        "producto_id": "p-030",
         "cantidad": 1,
-        "precio": 749900
+        "precio": 899900
       }
     ]
   },
   {
     "id": "o-15",
     "folio": "HG-000915",
-    "fecha": "2026-10-02T21:21:00.000Z",
+    "fecha": "2026-10-02T16:14:00.000Z",
     "cliente": {
       "nombre": "Verónica Treviño",
       "telefono": "8335544332",
       "correo": "verónica@example.com"
     },
     "metodo": "envio",
-    "sucursal_id": "sal",
-    "direccion_envio": "Calle 7 #709, Col. Centro, Saltillo",
+    "sucursal_id": "rey",
+    "direccion_envio": "Calle 19 #851, Col. Del Valle, Reynosa",
     "subtotal": 949900,
     "envio": 39900,
     "total": 989800,

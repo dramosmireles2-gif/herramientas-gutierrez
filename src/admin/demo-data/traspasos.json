@@ -7,12 +7,12 @@
     "estado": "recibido",
     "items": [
       {
-        "producto_id": "p-021",
-        "cantidad": 1
+        "producto_id": "p-019",
+        "cantidad": 3
       },
       {
-        "producto_id": "p-005",
-        "cantidad": 1
+        "producto_id": "p-036",
+        "cantidad": 2
       }
     ],
     "fecha_envio": "2026-09-14T16:15:00.000Z",
@@ -27,11 +27,11 @@
     "estado": "recibido",
     "items": [
       {
-        "producto_id": "p-013",
-        "cantidad": 1
+        "producto_id": "p-015",
+        "cantidad": 3
       },
       {
-        "producto_id": "p-026",
+        "producto_id": "p-021",
         "cantidad": 2
       }
     ],
@@ -47,12 +47,12 @@
     "estado": "recibido",
     "items": [
       {
-        "producto_id": "p-015",
-        "cantidad": 2
+        "producto_id": "p-007",
+        "cantidad": 3
       },
       {
-        "producto_id": "p-039",
-        "cantidad": 1
+        "producto_id": "p-012",
+        "cantidad": 2
       }
     ],
     "fecha_envio": "2026-09-27T16:15:00.000Z",
@@ -67,12 +67,12 @@
     "estado": "enviado",
     "items": [
       {
-        "producto_id": "p-037",
-        "cantidad": 3
+        "producto_id": "p-006",
+        "cantidad": 1
       },
       {
-        "producto_id": "p-028",
-        "cantidad": 3
+        "producto_id": "p-005",
+        "cantidad": 2
       }
     ],
     "fecha_envio": "2026-10-05T16:15:00.000Z",
