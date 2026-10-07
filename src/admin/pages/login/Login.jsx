@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { useAdmin } from '../../store/AdminStore'
 import { usePageMeta } from '../../../hooks/usePageMeta'
 import Logo from '../../../components/Logo'
@@ -7,14 +7,16 @@ import Logo from '../../../components/Logo'
 // Login simulado (sección 4.1): datos precargados, cualquier valor entra; se elige el rol para la demo.
 export default function Login() {
   usePageMeta('Entrar · Panel')
-  const { datos, cambiarUsuario } = useAdmin()
+  const { datos, iniciarSesion } = useAdmin()
   const navigate = useNavigate()
+  const location = useLocation()
   const [usuarioId, setUsuarioId] = useState('u-admin')
 
   const entrar = (e) => {
     e.preventDefault()
-    cambiarUsuario(usuarioId)
-    navigate('/admin', { replace: true })
+    iniciarSesion(usuarioId)
+    const desde = location.state?.desde
+    navigate(desde?.startsWith('/admin') && desde !== '/admin/login' ? desde : '/admin', { replace: true })
   }
 
   const encargados = datos.usuarios.filter((u) => u.rol === 'encargado')

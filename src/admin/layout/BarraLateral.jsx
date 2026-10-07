@@ -5,7 +5,7 @@ import { IconoSalir, IconoTienda } from '../components/iconos'
 
 /** Menú del panel. En escritorio va fijo a la izquierda; en móvil se muestra dentro de un Drawer. */
 export default function BarraLateral({ onNavegar }) {
-  const { esAdmin } = useAdmin()
+  const { esAdmin, cerrarSesion } = useAdmin()
 
   return (
     <nav aria-label="Menú del panel" className="flex h-full flex-col">
@@ -32,9 +32,16 @@ export default function BarraLateral({ onNavegar }) {
         <Link to="/" onClick={onNavegar} className="flex min-h-11 items-center gap-3 rounded-lg px-3 py-2 text-sm font-semibold text-blanco/80 hover:bg-blanco/10 hover:text-blanco">
           <IconoTienda width={20} height={20} /> Ver la tienda
         </Link>
-        <Link to="/admin/login" onClick={onNavegar} className="flex min-h-11 items-center gap-3 rounded-lg px-3 py-2 text-sm font-semibold text-blanco/80 hover:bg-blanco/10 hover:text-blanco">
+        <button
+          type="button"
+          onClick={() => {
+            onNavegar?.()
+            cerrarSesion()
+          }}
+          className="flex min-h-11 w-full items-center gap-3 rounded-lg px-3 py-2 text-sm font-semibold text-blanco/80 hover:bg-blanco/10 hover:text-blanco"
+        >
           <IconoSalir width={20} height={20} /> Cerrar sesión
-        </Link>
+        </button>
       </div>
     </nav>
   )

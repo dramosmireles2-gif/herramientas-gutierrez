@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { Outlet } from 'react-router-dom'
+import { Navigate, Outlet, useLocation } from 'react-router-dom'
+import { useAdmin } from '../store/AdminStore'
 import Drawer from '../../components/Drawer'
 import Logo from '../../components/Logo'
 import BandaDemo from './BandaDemo'
@@ -19,8 +20,13 @@ function Marca() {
 }
 
 export default function AdminLayout() {
+  const { autenticado } = useAdmin()
+  const location = useLocation()
   const [menuAbierto, setMenuAbierto] = useState(false)
   const cerrarMenu = () => setMenuAbierto(false)
+
+  // Sin sesión se pide el login (simulado) y después se regresa a la pantalla pedida.
+  if (!autenticado) return <Navigate to="/admin/login" replace state={{ desde: location.pathname + location.search }} />
 
   return (
     <div className="min-h-screen bg-fondo text-texto">
