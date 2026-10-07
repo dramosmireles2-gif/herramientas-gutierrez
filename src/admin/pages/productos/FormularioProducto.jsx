@@ -199,20 +199,20 @@ export default function FormularioProducto({ producto, onGuardado }) {
 
       <Seccion titulo="Fotos">
         <p className="mb-3 text-sm text-gris">La primera foto es la principal. En el demo se ven solo en este navegador.</p>
-        <ul className="grid grid-cols-3 gap-3 sm:grid-cols-6">
+        <ul className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-6">
           {f.imagenes.map((src, i) => (
             <li key={`${i}-${src.slice(-24)}`} className="relative">
               <ImagenProducto producto={{ ...f, imagenes: [src] }} src={src} className="w-full" />
               {i === 0 && <span className="absolute left-1 top-1 rounded bg-titanio px-1.5 py-0.5 text-[0.65rem] font-bold uppercase text-blanco">Principal</span>}
               {!soloLectura && (
                 <div className="mt-1 flex justify-between">
-                  <button type="button" onClick={() => moverFoto(i, -1)} disabled={i === 0} className="flex h-9 w-9 items-center justify-center rounded-md hover:bg-fondo disabled:opacity-30" aria-label={`Mover foto ${i + 1} a la izquierda`}>
+                  <button type="button" onClick={() => moverFoto(i, -1)} disabled={i === 0} className="flex h-10 w-10 items-center justify-center rounded-md hover:bg-fondo disabled:opacity-30" aria-label={`Mover foto ${i + 1} a la izquierda`}>
                     <ChevronRightIcon width={18} height={18} className="rotate-180" />
                   </button>
-                  <button type="button" onClick={() => quitarFoto(i)} className="flex h-9 w-9 items-center justify-center rounded-md text-agotado hover:bg-agotado/10" aria-label={`Eliminar foto ${i + 1}`}>
+                  <button type="button" onClick={() => quitarFoto(i)} className="flex h-10 w-10 items-center justify-center rounded-md text-agotado hover:bg-agotado/10" aria-label={`Eliminar foto ${i + 1}`}>
                     <XIcon width={18} height={18} />
                   </button>
-                  <button type="button" onClick={() => moverFoto(i, 1)} disabled={i === f.imagenes.length - 1} className="flex h-9 w-9 items-center justify-center rounded-md hover:bg-fondo disabled:opacity-30" aria-label={`Mover foto ${i + 1} a la derecha`}>
+                  <button type="button" onClick={() => moverFoto(i, 1)} disabled={i === f.imagenes.length - 1} className="flex h-10 w-10 items-center justify-center rounded-md hover:bg-fondo disabled:opacity-30" aria-label={`Mover foto ${i + 1} a la derecha`}>
                     <ChevronRightIcon width={18} height={18} />
                   </button>
                 </div>
