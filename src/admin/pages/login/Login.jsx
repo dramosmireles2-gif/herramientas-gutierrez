@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import { useAdmin } from '../../store/AdminStore'
 import { usePageMeta } from '../../../hooks/usePageMeta'
 import Logo from '../../../components/Logo'
+import CreditoRMKT from '../../../components/CreditoRMKT'
 
 // Login simulado (sección 4.1): datos precargados, cualquier valor entra; se elige el rol para la demo.
 export default function Login() {
@@ -43,6 +44,7 @@ export default function Login() {
 
         <button type="submit" className="btn-primary mt-6 h-12 w-full text-lg">Entrar</button>
       </form>
+      <CreditoRMKT className="mt-8" />
     </div>
   )
 }

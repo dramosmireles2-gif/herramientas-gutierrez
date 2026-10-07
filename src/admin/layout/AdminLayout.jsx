@@ -3,6 +3,7 @@ import { Navigate, Outlet, useLocation } from 'react-router-dom'
 import { useAdmin } from '../store/AdminStore'
 import Drawer from '../../components/Drawer'
 import Logo from '../../components/Logo'
+import CreditoRMKT from '../../components/CreditoRMKT'
 import BandaDemo from './BandaDemo'
 import BarraLateral from './BarraLateral'
 import BarraSuperior from './BarraSuperior'
@@ -29,9 +30,10 @@ export default function AdminLayout() {
   if (!autenticado) return <Navigate to="/admin/login" replace state={{ desde: location.pathname + location.search }} />
 
   return (
-    <div className="min-h-screen bg-fondo text-texto">
+    // Columna a toda la altura: el pie con el crédito queda abajo aunque la pantalla tenga poco contenido.
+    <div className="flex min-h-screen flex-col bg-fondo text-texto">
       <BandaDemo />
-      <div className="flex">
+      <div className="flex flex-1">
         {/* Barra lateral fija en escritorio */}
         <aside className="sticky top-0 hidden h-screen w-64 shrink-0 flex-col bg-titanio lg:flex">
           <Marca />
@@ -43,6 +45,11 @@ export default function AdminLayout() {
           <main id="contenido" className="flex-1 px-4 py-6 lg:px-8 lg:py-8">
             <Outlet />
           </main>
+          {/* Crédito de la agencia en todas las pantallas (mismo componente que el footer de la tienda) */}
+          <footer className="flex flex-wrap items-center justify-between gap-2 bg-titanio px-4 py-3 lg:px-8">
+            <p className="text-xs text-blanco/70">Herramientas Gutiérrez · Panel administrativo</p>
+            <CreditoRMKT />
+          </footer>
         </div>
       </div>
 
